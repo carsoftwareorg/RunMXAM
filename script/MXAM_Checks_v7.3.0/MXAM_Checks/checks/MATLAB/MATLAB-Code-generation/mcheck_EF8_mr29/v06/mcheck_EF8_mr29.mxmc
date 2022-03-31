@@ -1,0 +1,142 @@
+<check fileVersion="2">
+  <uid>38189f71-6f15-4b1b-8df4-3fc43f3cdfd1</uid>
+  <id>mcheck_EF8_mr29</id>
+  <version>6</version>
+  <status>released</status>
+  <preVersionUid></preVersionUid>
+  <author username="TGULSAN" domain="DEAUDI00"/>
+  <coAuthors>
+    <coAuthor username="FEAA9I4" domain="DEAUDI00"/>
+    <coAuthor username="FEDAIZE" domain="DEAUDI00"/>
+    <coAuthor username="S5HPURS" domain="DEAUDI00" firstname="Arno" lastname="Dietsche" email="extern.Arno.Dietsche@audi.de"/>
+  </coAuthors>
+  <copyright></copyright>
+  <reviewers/>
+  <templateUid>206e6a94-528a-7a2a-a982-901a9fd65b09</templateUid>
+  <title>Superfluous parameters in the DataDictionary, the model or the MATLAB Workspace</title>
+  <adapter version="2.3">com.modelengineers.mxam.tooladapter.matlab</adapter>
+  <executable>mes_EF8_mr29.m</executable>
+  <repairOption>false</repairOption>
+  <timeConsuming>false</timeConsuming>
+  <properties>
+    <enumeration name="Compiled Model Required" optional="false" private="false" multi="false">
+      <description>Indicates whether the check needs a compiled model.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <enumeration name="TargetLink Required" optional="false" private="false" multi="false">
+      <description>Indicates whether this check requires a TargetLink installation or not.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <enumeration name="Model Root Required" optional="false" private="false" multi="false">
+      <description>Indicates whether this check analyses up from the model root.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <string name="MATLAB Versions" optional="true" private="false">
+      <description>Related MATLAB versions</description>
+      <value></value>
+    </string>
+    <string name="TargetLink Versions" optional="true" private="false">
+      <description>Related TargetLink versions</description>
+      <value></value>
+    </string>
+    <string name="Embedded Coder Versions" optional="true" private="false">
+      <description>Related Embedded Coder versions</description>
+      <value></value>
+    </string>
+    <richtext name="Pass-Fail Criteria" optional="false" private="false">
+      <description>This is a detailed description of the pass and fail criteria.</description>
+      <value><![CDATA[<p> Passed :<br /> There are no superfluous parameters in the DD, the model or the MATLAB Workspace. </p> 
+<p> Warning:<br /> There are variables in the DD which are not defined in the model<br /> There is no or more than one node in the DD in the section 'Pool/Variables' with the name 'LocalVar' or '*_Param'. In this case the check could not load the parameters from the DD and all other checks are canceled. </p> 
+<p> Failed:<br /> There are workspace variables, which are not used in the model.<br /> There are&nbsp;in the model&nbsp;used&nbsp;variables, which are not defined in the DD<br /> </p>]]></value>
+    </richtext>
+    <richtext name="Technical Notes" optional="true" private="false">
+      <description>Important notes concerning the implementation of the check.</description>
+      <value><![CDATA[<p> Checks if all workspace variables used in the model<br /> <br /> Checks if all used variables are defined in the DataDictionary<br /> <br /> Checks if all defined DataDictionary variables are used in the model<br /> </p>]]></value>
+    </richtext>
+    <richtext name="Solution" optional="false" private="false">
+      <description>A solution for the user to repair faulty elements.</description>
+      <value><![CDATA[Remove any superfluous variables
+<br />]]></value>
+    </richtext>
+    <richtext name="Repair Action" optional="false" private="false">
+      <description>How the check automatically repairs faulty elements.</description>
+      <value><![CDATA[None
+<br />]]></value>
+    </richtext>
+    <richtext name="Example" optional="true" private="false">
+      <description>Example of how the check functions.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Prerequisites" optional="true" private="false">
+      <description>Prerequisites of the model for the check to function properly.</description>
+      <value></value>
+    </richtext>
+  </properties>
+  <parameterSpecifications/>
+  <parameterReferences>
+    <parameterReferences sourceType="shared">
+      <parameterName>Audi.ECU</parameterName>
+      <sourceIdentifier>4a3ee8ce-11d7-4284-b98c-a0e3b3be942e</sourceIdentifier>
+    </parameterReferences>
+  </parameterReferences>
+  <history>
+    <record timestamp="06/28/2016 14:42:14">
+      <author username="TGULSAN" domain="DEAUDI00"/>
+      <comment><![CDATA[Copied from 'Datatype plausibility on the basis of name of signal or parameter' (ID: mcheck_EF8_mr28, Version: v01, Library: MATLAB-Code-generation, Author: TGULSAN)]]></comment>
+    </record>
+    <record timestamp="08/05/2019 16:30:21">
+      <author username="FEAA9I4" domain="DEAUDI00"/>
+      <comment>Status changed from [DRAFT] to [RELEASED]. </comment>
+    </record>
+    <record timestamp="08/05/2019 16:38:16">
+      <author username="FEAA9I4" domain="DEAUDI00"/>
+      <comment>A new version [2] of [mcheck_EF8_mr29: Superfluous parameters the model or the MATLAB Workspace (v01)] has been created.</comment>
+    </record>
+    <record timestamp="10/14/2019 10:15:35">
+      <author username="FEAA9I4" domain="DEAUDI00"/>
+      <comment>Distinguish between old an new Toolchain</comment>
+    </record>
+    <record timestamp="10/14/2019 10:15:44">
+      <author username="FEAA9I4" domain="DEAUDI00"/>
+      <comment>Status changed from [DRAFT] to [RELEASED]. </comment>
+    </record>
+    <record timestamp="10/12/2020 11:43:48">
+      <author username="FEAA9I4" domain="DEAUDI00"/>
+      <comment>A new version [3] of [mcheck_EF8_mr29: Superfluous parameters the model or the MATLAB Workspace (v02)] has been created.</comment>
+    </record>
+    <record timestamp="10/15/2020 16:25:39">
+      <author username="FEAA9I4" domain="DEAUDI00"/>
+      <comment>Status changed from [DRAFT] to [RELEASED]. </comment>
+    </record>
+    <record timestamp="10/15/2020 16:36:48">
+      <author username="FEAA9I4" domain="DEAUDI00"/>
+      <comment>A new version [4] of [mcheck_EF8_mr29: Superfluous parameters the model or the MATLAB Workspace (v03)] has been created.</comment>
+    </record>
+    <record timestamp="10/15/2020 16:40:46">
+      <author username="FEAA9I4" domain="DEAUDI00"/>
+      <comment>Status changed from [DRAFT] to [RELEASED]. </comment>
+    </record>
+    <record timestamp="03/18/2021 07:19:04">
+      <author username="FEAA9I4" domain="DEAUDI00"/>
+      <comment>A new version [5] of [mcheck_EF8_mr29: Superfluous parameters the model or the MATLAB Workspace (v04)] has been created.</comment>
+    </record>
+    <record timestamp="03/22/2021 08:28:47">
+      <author username="FEAA9I4" domain="DEAUDI00"/>
+      <comment>Status changed from [DRAFT] to [RELEASED]. </comment>
+    </record>
+    <record timestamp="09/16/2021 11:50:19">
+      <author username="S5HPURS" domain="DEAUDI00" firstname="Arno" lastname="Dietsche" email="extern.arno.dietsche@audi.de"/>
+      <comment>A new version [6] of [mcheck_EF8_mr29: Superfluous parameters in the DataDictionary, the model or the MATLAB Workspace (v05)] has been created.</comment>
+    </record>
+    <record timestamp="03/02/2022 16:59:36">
+      <author username="FEAA9I4" domain="DEAUDI00"/>
+      <comment>Status changed from [DRAFT] to [RELEASED]. </comment>
+    </record>
+  </history>
+</check>

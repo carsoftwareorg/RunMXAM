@@ -1,0 +1,232 @@
+<guidelineDocument fileVersion="2">
+  <uid>8a502e0d-1d39-4087-ac60-81657b152d28</uid>
+  <id>EF8_floating_Guidelines_CG</id>
+  <title>EF8 Checkset für Floating-Point Projekte: Checkset Codegenerierer</title>
+  <access>protected</access>
+  <version>2</version>
+  <status>draft</status>
+  <author username="FEAA9I4" domain="DEAUDI00" firstname="Luca" lastname="Landwehrjohann" email="extern.luca.landwehrjohann@audi.de"/>
+  <copyright></copyright>
+  <coAuthors>
+    <coAuthor username="S5HPURS" domain="DEAUDI00" firstname="Arno" lastname="Dietsche" email="extern.Arno.Dietsche@audi.de"/>
+  </coAuthors>
+  <reviewers/>
+  <userProperties/>
+  <chapters>
+    <chapter uid="c8a9e8ee-a511-4902-9e09-422f4c5c5926" title="6.4 Verwendung von Blöcken und Signalen in Simulink">
+      <description name="description" optional="false" private="false">
+        <description>This is the description of the chapter.</description>
+        <value></value>
+      </description>
+      <guideline uid="221f38e4-5f7b-48da-b89b-1ae08932921f" modifier="standard" refUid="bc583089-cb71-4bc1-9fb9-8366ca9f2a3b" refId="mr1050" refVersion="3" refTitle="Einschränkungen für die Verwendung von Bibliotheksblöcken in Implementierungsmodellen">
+        <check uid="9ad5ef95-5182-4f01-8b54-466fd65b7c6f" selectedForRun="false" refUid="a08e5ecc-1770-49af-a1ca-224f3b55a151" refId="mcheck_mr1050" refVersion="2" refTitle="Einschränkungen für die Verwendung von Bibiliotheksblöcken in Implementierungsmodellen"/>
+        <check uid="e930490a-bdc1-4a7c-81f3-d2367c277c2a" selectedForRun="false" refUid="38bd37e8-766c-41f8-9eab-68c0d52e6a74" refId="mcheck_mr1050_b" refVersion="1" refTitle="Einschränkungen für die Verwendung von Bibiliotheksblöcken in Implementierungsmodellen: Dead Zone block"/>
+        <check uid="14bc675e-83c2-44d0-a9d8-98ccc30df6af" selectedForRun="false" refUid="380ed148-9133-4c7a-939f-51ebacf81669" refId="mcheck_mr1050_c" refVersion="1" refTitle="Einschränkungen für die Verwendung von Bibiliotheksblöcken in Implementierungsmodellen: Discrete Time Integrator block"/>
+        <check uid="40196bb3-6a90-4e89-a08c-9b2bdcf7d5b3" selectedForRun="false" refUid="ff4c18d4-300e-45b9-af31-7507c8beffa2" refId="mcheck_mr1050_d" refVersion="1" refTitle="Einschränkungen für die Verwendung von Bibiliotheksblöcken in Implementierungsmodellen: Relational Operator und Logical Operator block"/>
+        <check uid="7f3db12f-113a-4d62-b87f-e51cfb30ec06" selectedForRun="false" refUid="5bdab8ca-64f6-4ed7-a534-ba9a5b23bc19" refId="mcheck_mr1050_e" refVersion="1" refTitle="Einschränkungen für die Verwendung von Bibiliotheksblöcken in Implementierungsmodellen: Lookup Table (n-D), Direct Lookup Table (n-D), Interpolation (n-D)  und PreLookup blocks"/>
+        <check uid="987acc9b-24ea-4a0c-9df3-ae6be9facb2d" selectedForRun="false" refUid="96de32f1-2ae4-481e-99fa-219ba03ac3a8" refId="mcheck_mr1050_f" refVersion="1" refTitle="Einschränkungen für die Verwendung von Bibiliotheksblöcken in Implementierungsmodellen: Product block"/>
+        <check uid="23794630-e362-42c8-abe6-9365df7a0d6a" selectedForRun="false" refUid="0a85c354-9d3b-434b-b590-fabb099cb205" refId="mcheck_mr1050_g" refVersion="1" refTitle="Einschränkungen für die Verwendung von Bibiliotheksblöcken in Implementierungsmodellen: Sum block"/>
+        <check uid="9ed60b34-dce9-402a-b97a-97f489b3c463" selectedForRun="false" refUid="25b654b0-0dcb-4d43-b9bc-e58cd8a789a5" refId="mcheck_mr1050_h" refVersion="1" refTitle="Einschränkungen für die Verwendung von Bibiliotheksblöcken in Implementierungsmodellen: Math Function block"/>
+        <check uid="78452028-8927-4031-9a11-161af809f3b9" selectedForRun="false" refUid="a91638bd-dcd6-48a4-a944-e8552f2d5e9e" refId="mcheck_mr1050_j" refVersion="1" refTitle="Einschränkungen für die Verwendung von Bibiliotheksblöcken in Implementierungsmodellen: Switch Case block"/>
+        <check uid="58ad3fc7-7210-4f05-86bf-ec52fbfb25ff" selectedForRun="false" refUid="d94a7128-3eab-42a2-a912-bbd495b93bee" refId="mcheck_mr1050_k" refVersion="1" refTitle="Einschränkungen für die Verwendung von Bibiliotheksblöcken in Implementierungsmodellen: Data Type Conversion block"/>
+        <check uid="30016674-d9cb-4c22-b474-270a1bc800ef" selectedForRun="true" refUid="cbd0cde1-bb29-4b3e-acad-b068c4f767ca" refId="mcheck_mr1050_l" refVersion="1" refTitle="Einschränkungen für die Verwendung von Bibiliotheksblöcken in Implementierungsmodellen: Data Store Memory, Data Store Read und Data Store Write block"/>
+      </guideline>
+    </chapter>
+    <chapter uid="bf29dfe9-aa6f-4b05-bbba-7a7ef18115b2" title="6.5 Verwendung der Zustandsnotation in Stateflow">
+      <description name="description" optional="false" private="false">
+        <description>This is the description of the chapter.</description>
+        <value></value>
+      </description>
+      <guideline uid="9f9254cb-b6a5-4df2-8e99-488d47f90d62" modifier="standard" refUid="405ecac5-ad69-45b1-b10f-4671c8b5d9bf" refId="mr289" refVersion="1" refTitle="Sichtbarkeit von Lokalen Daten und Events">
+        <check uid="7dce6c30-b812-4b13-b9b1-a7c3738531b7" selectedForRun="true" refUid="7174720c-80ab-4670-939f-02cc2b3ae26b" refId="mcheck_mr289" refVersion="1" refTitle="Sichbarkeit von lokalen Daten und Events"/>
+      </guideline>
+      <guideline uid="9bb94f89-712f-4980-baa7-2c30ed6604c8" modifier="standard" refUid="9419ac10-9ff8-4bad-9490-46d8f1d1d2e6" refId="mr290" refVersion="1" refTitle="Verwendung von Events">
+        <check uid="9a1e172a-b89f-47f3-95bc-b6fbef8a3c60" selectedForRun="true" refUid="45914e53-b669-427e-86e4-031d8f22299f" refId="mcheck_mr290" refVersion="1" refTitle="Verwendung von Events"/>
+      </guideline>
+      <guideline uid="5cf8fb57-21ee-4182-aabd-4ec617ba0a3e" modifier="standard" refUid="f4b263a0-091b-43f0-9b95-e52a61f99fe5" refId="mr294" refVersion="1" refTitle="Formulierung Disjunkter Zustandsübergangsbedingungen">
+        <check uid="d24e1f76-4f6e-4abd-b390-4ce73ff6c160" selectedForRun="true" refUid="fb1bb6dc-b332-4123-9e6b-c46f605eb9a5" refId="mcheck_mr294" refVersion="1" refTitle="Formulierung disjunkter Zustandsübergangsbedingungen"/>
+      </guideline>
+    </chapter>
+    <chapter uid="25611aa2-2c21-4d8a-90c9-4ca57ce5eea5" title="Disabled Links">
+      <description name="description" optional="false" private="false">
+        <description>This is the description of the chapter.</description>
+        <value></value>
+      </description>
+      <guideline uid="2794ca39-1731-4d86-8aec-84117f623143" modifier="standard" refUid="50fe2a7c-71a5-4fb9-967a-72e0482cf248" refId="EF8_mr1160" refVersion="1" refTitle="No disabled links present in the model">
+        <check uid="9d70f74a-8af2-44d8-b483-12f02200812d" selectedForRun="true" refUid="f9285741-71c7-49c2-aeb1-f0d0f7acc75d" refId="mcheck_EF8_mr1160" refVersion="1" refTitle="No disabled links present in the model"/>
+      </guideline>
+    </chapter>
+    <chapter uid="cdc82fea-2072-4529-8cf2-e6f95fcad9d3" title="EF8-Checks">
+      <description name="description" optional="false" private="false">
+        <description>This is the description of the chapter.</description>
+        <value></value>
+      </description>
+      <chapter uid="effce3fd-7dfc-4591-bacd-a341eca66e8c" title="general guidelines">
+        <description name="description" optional="false" private="false">
+          <description>This is the description of the chapter.</description>
+          <value></value>
+        </description>
+        <guideline uid="4227e43d-d691-4153-ae20-d7bb12b661c5" modifier="standard" refUid="2869b5a1-9681-4182-aa67-b3023e170785" refId="EF8_mr03" refVersion="3" refTitle="Check of TL_Port - DD name">
+          <check uid="a0681ce4-9954-4b14-a404-69d48ba20131" selectedForRun="true" refUid="1113a2f7-3738-4e12-831f-ee76c644f30e" refId="mcheck_EF8_mr03" refVersion="1" refTitle="Check of TL_Port - DD name"/>
+          <check uid="dc402895-fde8-4efe-8aa9-da1378e9340b" selectedForRun="true" refUid="66f90981-741e-448e-93d2-c151095046c8" refId="mcheck_EF8_mr03b" refVersion="1" refTitle="Check DD link of rte ports"/>
+        </guideline>
+        <guideline uid="dccfadba-7e29-41eb-b013-48c5ff451268" modifier="standard" refUid="7618604c-4970-41fb-bd88-16b42f9536cd" refId="EF8_mr05" refVersion="8" refTitle="Look-up table - consistent ranges">
+          <check uid="8f117321-d1b9-4ac0-8645-003835fb42d3" selectedForRun="true" refUid="cc565bc8-48ab-47d1-8bb3-7a45b0a0142f" refId="mcheck_EF8_mr05" refVersion="6" refTitle="Look-up table - check of Output and Table tabs - LSB, Offset, Min and Max"/>
+          <check uid="e9ce2b24-1b5b-4cbf-bcdf-2322fd5dbe70" selectedForRun="false" refUid="1b096e34-35d9-41c8-a80f-16e66d8e7524" refId="mcheck_EF8_mr05b" refVersion="1" refTitle="Look-up table - compare value range with its direct input"/>
+          <check uid="efba7bbd-9b04-4784-8241-033084abb7dc" selectedForRun="false" refUid="3e074cf5-430d-417a-8579-02c94ca4dcf2" refId="mcheck_EF8_mr05c" refVersion="1" refTitle="Look-up table - compare value range with its direct output"/>
+        </guideline>
+        <guideline uid="75679615-b5c9-4e29-a60e-5966a2b54217" modifier="standard" refUid="e7e0e68b-fa06-4fb1-918f-d649336107fc" refId="EF8_mr06" refVersion="5" refTitle="Gain block - Check Settings in Gain block">
+          <check uid="a3caba4d-6ff8-4441-9ac5-9ae3875e8c53" selectedForRun="true" refUid="dda41c63-68bc-4956-b0a6-26e1a4ebf909" refId="mcheck_EF8_mr06a" refVersion="2" refTitle="Gain Block - Check datatype of intern calculation"/>
+          <check uid="4dd03df4-e077-49a8-9e3c-404a9164ead3" selectedForRun="true" refUid="dc5589ed-c418-4d16-ac56-a5e232afc232" refId="mcheck_EF8_mr06b" refVersion="1" refTitle="Gain Block - Check if linked to any DD Element"/>
+        </guideline>
+        <guideline uid="a25caa4d-b632-494a-a9f4-dae89e23b3ab" modifier="standard" refUid="b1223b7c-f437-4471-99b2-fbfe8b518ec3" refId="EF8_mr07" refVersion="7" refTitle="Usage of Division Block">
+          <check uid="a9559f7c-a65d-4847-8d62-43d9e71944a8" selectedForRun="true" refUid="dd95c7ca-aefd-4b35-b144-0e096cf7d24e" refId="mcheck_EF8_mr07" refVersion="6" refTitle="Avoid divison by zero"/>
+        </guideline>
+        <guideline uid="0ee77796-fad7-4f1f-ab55-d9cbe9fed381" modifier="standard" refUid="1a15f7d5-25e4-4d28-a9bc-edef76356a9d" refId="EF8_mr09" refVersion="2" refTitle="Usage of parameters in LUT Blocks">
+          <check uid="774ba953-905f-4ac5-8001-a33324b86e74" selectedForRun="true" refUid="881e55f3-e657-4a37-a098-c33134576233" refId="mcheck_EF8_mr09" refVersion="1" refTitle="Usage of parameters in LUT Blocks"/>
+        </guideline>
+        <guideline uid="9d2251e7-d960-4b98-b346-ef3629565d00" modifier="standard" refUid="ca9e8e3e-fefa-4404-96a6-a9c8459459a7" refId="EF8_mr11" refVersion="6" refTitle="Data types of Stateflow variables">
+          <check uid="9afc0dd0-a530-41d4-b1f5-cec000e00b40" selectedForRun="true" refUid="7df7ce1e-c50e-4211-82bf-62e65e815fe7" refId="mcheck_EF8_mr11" refVersion="6" refTitle="Data types of Stateflow signals"/>
+        </guideline>
+        <guideline uid="32125bc5-3aff-4494-89a9-650e28a49769" modifier="standard" refUid="1de1cca2-c91d-405f-a84c-33be47423f36" refId="EF8_mr18" refVersion="5" refTitle="Datatype consistency between Simulink and TargetLink at TL Ports">
+          <check uid="1b4ff2b6-52f8-4d85-b7d1-30f675785811" selectedForRun="true" refUid="3c51959c-ea09-4409-974f-c4b0a89bda66" refId="mcheck_EF8_mr18" refVersion="4" refTitle="Datatype consistency between Simulink and TargetLink at TL Ports"/>
+          <check uid="3566737d-a895-479d-8490-64913003d656" selectedForRun="false" refUid="e0196a67-81bb-45d7-aefb-f02ad311cba0" refId="mcheck_EF8_mr18b" refVersion="1" refTitle="Fixed Simulink Datatypes for TL_Inports"/>
+        </guideline>
+        <guideline uid="ebae24a1-7308-4dab-8c66-f48a7b2d3a89" modifier="standard" refUid="28b0ea0e-f0d2-4824-ba3f-b9f3933fd562" refId="EF8_mr19" refVersion="6" refTitle="Correct parameterization of TL_Constant blocks">
+          <check uid="429f9028-67dc-40ef-8863-3efa9ac74f8c" selectedForRun="true" refUid="7b6febb7-83a6-4c80-8e54-c4929193e07f" refId="mcheck_EF8_mr19" refVersion="4" refTitle="Correct parameterization of TL_Constant blocks"/>
+          <check uid="e3567c2a-72e1-4eef-821e-ffd3ca5c0607" selectedForRun="true" refUid="35a4bae1-1da7-480e-9627-5898e868c609" refId="mcheck_EF8_mr19b" refVersion="1" refTitle="Correct variable classfor constant blocks in reuseable functions"/>
+          <check uid="ffd5949f-0dff-40c1-82de-b3c83c082615" selectedForRun="false" refUid="fac6bbfc-e639-4bce-9bfe-e50747314acf" refId="mcheck_EF8_mr19c" refVersion="1" refTitle="Fixed Simulink Datatypes for TL_Constants blocks"/>
+          <check uid="137f1eea-7f6f-4667-8d77-c0fbab391da4" selectedForRun="false" refUid="4408e826-9dfb-4b72-8142-5762f2ee2521" refId="mcheck_EF8_mr19d" refVersion="1" refTitle="Validate value range of inported parameters"/>
+        </guideline>
+        <guideline uid="32274fa2-df64-4934-bcb3-ceba18f942a6" modifier="standard" refUid="24d284a7-a4fa-49be-a902-024bd5b81727" refId="EF8_mr22" refVersion="6" refTitle="Datatype consistency check for TL blocks except ports">
+          <check uid="e1a0cea8-2e93-427c-9ac9-7f1aa491b445" selectedForRun="true" refUid="78746284-71ec-4cab-98e5-4360eeae48c7" refId="mcheck_EF8_mr22" refVersion="5" refTitle="Datatype consistency check"/>
+        </guideline>
+        <guideline uid="5dc516bd-864c-4a40-8e27-04a007601dda" modifier="standard" refUid="502314e4-4974-4f98-9cb1-157c91fc12e1" refId="EF8_mr26" refVersion="3" refTitle="Output type of ‘signum’ Block">
+          <check uid="0535d4a1-41c3-4c3e-a88e-4323bbe86e61" selectedForRun="true" refUid="9c62af50-05c5-4c55-8e8f-13a02591e508" refId="mcheck_EF8_mr26" refVersion="2" refTitle="Output data type of  &apos;signum&apos; block"/>
+        </guideline>
+        <guideline uid="26287c0e-1159-43dd-842c-d77ea81c6700" modifier="standard" refUid="107e2cc8-6934-44a7-b895-c864e7e3fa01" refId="EF8_mr27" refVersion="6" refTitle="Inputs to a merge block">
+          <check uid="e72eae39-03b7-4104-a848-a2ada918e425" selectedForRun="true" refUid="8f565eb9-77c6-4099-a28c-5037b314a3a1" refId="mcheck_EF8_mr27" refVersion="5" refTitle="Scalings of inputs to a merge block"/>
+        </guideline>
+        <guideline uid="567eb924-c27f-4803-b635-6d2ee839ee29" modifier="standard" refUid="7cc9c4bc-e9bf-4264-9254-ab7cb72ff0cd" refId="EF8_mr29" refVersion="6" refTitle="Superfluous parameters in workspace and model">
+          <check uid="673e03a5-cc09-412a-9c97-b7e5201b3f98" selectedForRun="true" refUid="38189f71-6f15-4b1b-8df4-3fc43f3cdfd1" refId="mcheck_EF8_mr29" refVersion="6" refTitle="Superfluous parameters in the DataDictionary, the model or the MATLAB Workspace"/>
+        </guideline>
+        <guideline uid="4bb63206-5a4f-4431-8ff2-f2e3d6716fce" modifier="standard" refUid="baa5b9c3-f519-45d0-b5da-85291592eda0" refId="EF8_mr33" refVersion="4" refTitle="Unused DD-Signals">
+          <check uid="1dc9c9d8-9c54-4f9b-8e10-4f36b95fc98b" selectedForRun="true" refUid="013c67ab-7e68-4379-baef-87c2be92a183" refId="mcheck_EF8_mr33" refVersion="3" refTitle="Unused signals in the Data-Dictionary"/>
+        </guideline>
+        <guideline uid="e5ccd872-fbf0-4a15-a00d-24442ab698ee" modifier="standard" refUid="edf6683c-4d6d-4296-98ad-a52a1c43e3cb" refId="EF8_mr40" refVersion="2" refTitle="Avoid illegal min/max property in TL blocks">
+          <check uid="bf2fff4b-41ec-4786-aae9-3964a32e1c3f" selectedForRun="true" refUid="0a80edcc-929b-4b7a-909d-0a99008597c5" refId="mcheck_EF8_mr40" refVersion="2" refTitle="Avoid min/max property in TL blocks"/>
+        </guideline>
+        <guideline uid="83649fe5-90de-4c78-a2fc-b8245fd58333" modifier="standard" refUid="d0f9a3c5-2ffa-43cc-b8a4-c68385d8a182" refId="EF8_mr44" refVersion="3" refTitle="Usage of SaturateOnIntegerOverflow option">
+          <check uid="1c2a73f6-ee5d-44fa-96f1-1a69590fd3d1" selectedForRun="true" refUid="734192d2-29d3-4e7f-9a00-bc13c50b62da" refId="mcheck_EF8_mr44" refVersion="3" refTitle="Equal option for saturation between TargetLink and Simulink"/>
+        </guideline>
+        <guideline uid="bfe73114-587a-4d46-947e-a87b670b9b38" modifier="standard" refUid="614a1d30-98e1-4bd0-ac41-d0e07651955c" refId="EF8_mr286" refVersion="2" refTitle="Relational operator modelling guideline">
+          <check uid="ff45b832-e282-4dde-8918-393c446e97c1" selectedForRun="true" refUid="c782eea0-b8fa-415c-a2f0-aac65d54b1dc" refId="mcheck_EF8_mr286" refVersion="2" refTitle="Input datatypes to relational operators"/>
+        </guideline>
+        <guideline uid="e350a19e-5ef8-4f84-8b7d-48d8c5ddbe91" modifier="standard" refUid="a93f2f4f-cfc9-4a82-b24e-2f31035163eb" refId="EF8_mr1157" refVersion="1" refTitle="Usage of mathematical operations">
+          <check uid="1a3d5086-f074-4456-bfe2-5a45fcf25ba1" selectedForRun="true" refUid="40eb043c-4fcf-4d80-805f-c8954c30e987" refId="mcheck_EF8_mr1157_a" refVersion="1" refTitle="Number of inputs to mathematical operations"/>
+        </guideline>
+      </chapter>
+      <chapter uid="35d9b290-5046-4b41-89b4-f63b19fd4218" title="HCP1 specific guidelines">
+        <description name="description" optional="false" private="false">
+          <description>This is the description of the chapter.</description>
+          <value></value>
+        </description>
+        <guideline uid="b8ea326a-9cbd-43b6-b338-3f0dc69ee407" modifier="standard" refUid="072c50fb-4548-4ee1-a11d-06ce35509a43" refId="EF8_mr20" refVersion="3" refTitle="Float64 Datatypes in Model">
+          <check uid="3ea14be1-7be9-4ad8-94c0-ea11dc671251" selectedForRun="true" refUid="4af72902-d429-437e-8955-5a66259f3748" refId="mcheck_EF8_mr20" refVersion="2" refTitle="Float64 Datatypes in Model"/>
+        </guideline>
+        <guideline uid="46af1be3-af96-40c0-a8aa-23ee63930d21" modifier="standard" refUid="c3662a5c-309e-40bc-80d0-56d9ec82190a" refId="EF8_mr28" refVersion="2" refTitle="Datatype plausibility on the basis of name of signal or parameter">
+          <check uid="214d20a6-8ca2-42e6-aec3-172dd919a260" selectedForRun="true" refUid="68a8204b-dc3f-44ad-a89f-74566674d50c" refId="mcheck_EF8_mr28" refVersion="1" refTitle="Datatype plausibility on the basis of name of signal or parameter"/>
+        </guideline>
+        <guideline uid="200f046b-8ceb-4172-8b40-98f6deb714df" modifier="standard" refUid="40439544-466c-416d-916e-216977690c88" refId="EF8_mr42" refVersion="2" refTitle="Validate settings in TL-Blocks">
+          <check uid="ccae8984-ff5e-4c02-bd67-475c354cd7b6" selectedForRun="true" refUid="3e76958c-b4f1-49af-acf0-1c73fd157c94" refId="mcheck_EF8_mr42a" refVersion="1" refTitle="Avoid usage of constant variable-class"/>
+          <check uid="09b404b7-0ba5-4ba9-86e8-328d843b2df4" selectedForRun="true" refUid="2c62a6cd-a7c4-466e-a7c6-486e6b38e202" refId="mcheck_EF8_mr42b" refVersion="2" refTitle="Interpret as 1D is set for all constant-blocks"/>
+        </guideline>
+        <guideline uid="05a7ecd5-c53f-4b32-852c-d377bf807c61" modifier="standard" refUid="99e6aa0f-d41e-4ce3-a82e-414cfb02d5c4" refId="EF8_mr46" refVersion="1" refTitle="Signal sharing with global parameters">
+          <check uid="cd65f9a7-c90e-401a-be99-7a7f7d116b30" selectedForRun="true" refUid="c528b7e1-63dd-4247-aa42-0942c9d45936" refId="mcheck_EF8_mr46" refVersion="1" refTitle="Verify signal sharing naming convention"/>
+        </guideline>
+        <guideline uid="4f44b4fc-a9f1-40c1-bbe6-111fa564a65e" modifier="standard" refUid="0fbb3eeb-afad-481f-8f08-2c7ba30cff65" refId="EF8_mr35" refVersion="4" refTitle="Usage of DataDictionary properties">
+          <check uid="127ab710-7ea1-4b69-8477-23a91f28f07b" selectedForRun="true" refUid="06cd0bb9-d1b4-4794-b889-54723672e98f" refId="mcheck_EF8_mr35ab" refVersion="1" refTitle="Consistent default data type in DD"/>
+          <check uid="6a65d392-1846-4b35-bf77-f219e0bb957c" selectedForRun="true" refUid="b45e4f4c-767c-42a2-a137-50593a246581" refId="mcheck_EF8_mr35c" refVersion="1" refTitle="Avoid usage of TLDatatype node"/>
+        </guideline>
+      </chapter>
+    </chapter>
+  </chapters>
+  <parameterSettings>
+    <check>
+      <setting>
+        <parameterSpecificationReference sourceType="check">
+          <parameterName>Volkswagen.forbiddenOperatorForDataTypeDouble</parameterName>
+          <sourceIdentifier>mcheck_mr286</sourceIdentifier>
+        </parameterSpecificationReference>
+        <type>STRING</type>
+        <value><![CDATA[{'~=','=='}]]></value>
+        <comment></comment>
+      </setting>
+    </check>
+    <shared>
+      <setting>
+        <parameterSpecificationReference sourceType="shared">
+          <parameterName>Volkswagen.Modellteile.GlobalZulaessigeBloecke</parameterName>
+          <sourceIdentifier>4b996abf-dd6e-46d4-9684-937e356e578e</sourceIdentifier>
+        </parameterSpecificationReference>
+        <type>STRING</type>
+        <value><![CDATA[{'Inport','Outport','EnablePort','TriggerPort','Ground','Terminator','Mux','Demux','BusCreator','BusSelector','Merge','From','Goto','Switch','MultiPortSwitch','Constant','UnitDelay','GotoTagVisibility'}]]></value>
+        <comment></comment>
+      </setting>
+      <setting>
+        <parameterSpecificationReference sourceType="shared">
+          <parameterName>Audi.ECU</parameterName>
+          <sourceIdentifier>4a3ee8ce-11d7-4284-b98c-a0e3b3be942e</sourceIdentifier>
+        </parameterSpecificationReference>
+        <type>STRING</type>
+        <value>HCP1</value>
+        <comment>Used in HCP1 projects</comment>
+      </setting>
+      <setting>
+        <parameterSpecificationReference sourceType="shared">
+          <parameterName>AUDI.TesterRole</parameterName>
+          <sourceIdentifier>4a3ee8ce-11d7-4284-b98c-a0e3b3be942e</sourceIdentifier>
+        </parameterSpecificationReference>
+        <type>STRING</type>
+        <value>CG</value>
+        <comment></comment>
+      </setting>
+      <setting>
+        <parameterSpecificationReference sourceType="shared">
+          <parameterName>Audi.IsFloating</parameterName>
+          <sourceIdentifier>4a3ee8ce-11d7-4284-b98c-a0e3b3be942e</sourceIdentifier>
+        </parameterSpecificationReference>
+        <type>BOOLEAN</type>
+        <value>true</value>
+        <comment></comment>
+      </setting>
+    </shared>
+    <global/>
+  </parameterSettings>
+  <history>
+    <record timestamp="10/04/2016 13:46:35">
+      <author username="FedaiZe" domain="DEAUDI00"/>
+      <comment><![CDATA[Copied from 'EF8 Checkset für Floating-Point Projekte' (ID: EF8_floating_copy, Version: v01, Library: UserDocumentLibrary, Author: FedaiZe)]]></comment>
+    </record>
+    <record timestamp="01/12/2017 14:29:56">
+      <author username="FedaiZe" domain="DEAUDI00"/>
+      <comment>Status changed from [DRAFT] to [RELEASED]. </comment>
+    </record>
+    <record timestamp="01/12/2017 16:41:00">
+      <author username="FedaiZe" domain="DEAUDI00"/>
+      <comment>A new version [2] of [EF8_floating_Guidelines: EF8 Checkset für Floating-Point Projekte (v01)] has been created.</comment>
+    </record>
+    <record timestamp="10/19/2018 18:13:37">
+      <author username="FEAA9I4" domain="DEAUDI00"/>
+      <comment><![CDATA[Copied from 'EF8 Checkset für Floating-Point Projekte' (ID: EF8_floating_Guidelines, Version: v02, Library: UserDocumentLibrary, Author: FedaiZe)]]></comment>
+    </record>
+    <record timestamp="10/09/2020 09:05:31">
+      <author username="FEAA9I4" domain="DEAUDI00"/>
+      <comment>Status changed from [DRAFT] to [RELEASED]. </comment>
+    </record>
+    <record timestamp="10/09/2020 09:05:57">
+      <author username="FEAA9I4" domain="DEAUDI00"/>
+      <comment>A new version [2] of [EF8_floating_Guidelines_CG: EF8 Checkset für Floating-Point Projekte: Checkset Codegenerierer (v01)] has been created.</comment>
+    </record>
+  </history>
+</guidelineDocument>

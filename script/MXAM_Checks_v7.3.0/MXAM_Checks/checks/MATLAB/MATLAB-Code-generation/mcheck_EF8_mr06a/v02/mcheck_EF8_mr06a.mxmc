@@ -1,0 +1,104 @@
+<check fileVersion="2">
+  <uid>dda41c63-68bc-4956-b0a6-26e1a4ebf909</uid>
+  <id>mcheck_EF8_mr06a</id>
+  <version>2</version>
+  <status>released</status>
+  <preVersionUid></preVersionUid>
+  <author username="FEAA9I4" domain="DEAUDI00"/>
+  <coAuthors>
+    <coAuthor username="S5HPURS" domain="DEAUDI00" firstname="Arno" lastname="Dietsche" email="extern.Arno.Dietsche@audi.de"/>
+  </coAuthors>
+  <copyright></copyright>
+  <reviewers/>
+  <templateUid>206e6a94-528a-7a2a-a982-901a9fd65b09</templateUid>
+  <title>Gain Block - Check datatype of intern calculation</title>
+  <adapter version="2.3">com.modelengineers.mxam.tooladapter.matlab</adapter>
+  <executable>mes_EF8_mr06a.m</executable>
+  <repairOption>false</repairOption>
+  <timeConsuming>false</timeConsuming>
+  <properties>
+    <enumeration name="Compiled Model Required" optional="false" private="false" multi="false">
+      <description>Indicates whether the check needs a compiled model.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <enumeration name="TargetLink Required" optional="false" private="false" multi="false">
+      <description>Indicates whether this check requires a TargetLink installation or not.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <enumeration name="Model Root Required" optional="false" private="false" multi="false">
+      <description>Indicates whether this check analyses up from the model root.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <string name="MATLAB Versions" optional="true" private="false">
+      <description>Related MATLAB versions</description>
+      <value>all</value>
+    </string>
+    <string name="TargetLink Versions" optional="true" private="false">
+      <description>Related TargetLink versions</description>
+      <value>all</value>
+    </string>
+    <string name="Embedded Coder Versions" optional="true" private="false">
+      <description>Related Embedded Coder versions</description>
+      <value>irrelevant</value>
+    </string>
+    <richtext name="Pass-Fail Criteria" optional="false" private="false">
+      <description>This is a detailed description of the pass and fail criteria.</description>
+      <value><![CDATA[<p> Passed if datatype in 'Gain' tab is default or </p> 
+<ul> 
+ <li> matches the 'Output' tab datatype and </li> 
+ <li> matches the datatype of the value field. </li> 
+</ul> 
+<p> The 'Gain value' should be representable in the used datatype and scaling&nbsp; </p>]]></value>
+    </richtext>
+    <richtext name="Technical Notes" optional="true" private="false">
+      <description>Important notes concerning the implementation of the check.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Solution" optional="false" private="false">
+      <description>A solution for the user to repair faulty elements.</description>
+      <value><![CDATA[<p> Use default as variable class or use correct datatype. . </p>]]></value>
+    </richtext>
+    <richtext name="Repair Action" optional="false" private="false">
+      <description>How the check automatically repairs faulty elements.</description>
+      <value>-</value>
+    </richtext>
+    <richtext name="Example" optional="true" private="false">
+      <description>Example of how the check functions.</description>
+      <value><![CDATA[<ul> 
+ <li> 'Output' datatype is Float32 and 'Gain' value is UInt8 leads to a failed result </li> 
+ <li> 'Gain value' is&nbsp;3.1415 and datatype is UInt8 leads to a failed result </li> 
+ <li> 'Gain value' is&nbsp;300 and datatype is UInt8 leads to a failed result </li> 
+</ul>]]></value>
+    </richtext>
+    <richtext name="Prerequisites" optional="true" private="false">
+      <description>Prerequisites of the model for the check to function properly.</description>
+      <value></value>
+    </richtext>
+  </properties>
+  <parameterSpecifications/>
+  <parameterReferences/>
+  <history>
+    <record timestamp="02/20/2021 08:47:46">
+      <author username="FEAA9I4" domain="DEAUDI00"/>
+      <comment><![CDATA[Copied from 'Gain Block - Check if linked to any DD Element' (ID: mcheck_EF8_mr06, Version: v01, Library: MATLAB-Code-generation, Author: TGULSAN)]]></comment>
+    </record>
+    <record timestamp="03/22/2021 08:29:51">
+      <author username="FEAA9I4" domain="DEAUDI00"/>
+      <comment>Status changed from [DRAFT] to [RELEASED]. </comment>
+    </record>
+    <record timestamp="12/16/2021 11:41:29">
+      <author username="S5HPURS" domain="DEAUDI00" firstname="Arno" lastname="Dietsche" email="extern.arno.dietsche@audi.de"/>
+      <comment>A new version [2] of [mcheck_EF8_mr06a: Gain Block - Check datatype of intern calculation (v01)] has been created.</comment>
+    </record>
+    <record timestamp="03/02/2022 16:58:07">
+      <author username="FEAA9I4" domain="DEAUDI00"/>
+      <comment>Status changed from [DRAFT] to [RELEASED]. </comment>
+    </record>
+  </history>
+</check>

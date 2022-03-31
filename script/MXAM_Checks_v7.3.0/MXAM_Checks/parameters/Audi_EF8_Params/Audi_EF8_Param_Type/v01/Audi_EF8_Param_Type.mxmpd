@@ -1,0 +1,45 @@
+<parameterDefinition fileVersion="1">
+  <uid>4a3ee8ce-11d7-4284-b98c-a0e3b3be942e</uid>
+  <id>Audi_EF8_Param_Type</id>
+  <version>1</version>
+  <status>draft</status>
+  <title>Determine the type of numeric representation</title>
+  <author username="FEAA9I4" domain="DEAUDI00"/>
+  <copyright></copyright>
+  <parameterSpecifications>
+    <specification type="boolean">
+      <name>Audi.IsFloating</name>
+      <description>Determine if the datatype of the model is floatingpoint or fixpoint</description>
+      <defaultValue>true</defaultValue>
+    </specification>
+    <specification type="string">
+      <name>Audi.RoundingMode</name>
+      <description>Set the rounding mode, which should be used for integer types.</description>
+      <defaultValue>Zero</defaultValue>
+      <allowedValues>
+        <entry>Nearest</entry>
+        <entry>Floor</entry>
+        <entry>Zero</entry>
+      </allowedValues>
+    </specification>
+    <specification type="string">
+      <name>Audi.ECU</name>
+      <description>Choose for which ECU the model is developed</description>
+      <defaultValue>HCP1</defaultValue>
+      <allowedValues>
+        <entry>EFP</entry>
+        <entry>HCP1</entry>
+      </allowedValues>
+    </specification>
+    <specification type="string">
+      <name>Audi.TesterRole</name>
+      <description>Role of the tester to decide the scope of the checks</description>
+      <defaultValue>ALL</defaultValue>
+      <allowedValues>
+        <entry>ALL</entry>
+        <entry>FE</entry>
+        <entry>CG</entry>
+      </allowedValues>
+    </specification>
+  </parameterSpecifications>
+</parameterDefinition>

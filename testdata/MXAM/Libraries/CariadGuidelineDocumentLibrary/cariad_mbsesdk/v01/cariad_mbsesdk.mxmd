@@ -1,0 +1,42 @@
+<guidelineDocument fileVersion="2">
+  <uid>0353d09f-e8eb-4bc1-baf8-6f2f659810b1</uid>
+  <id>cariad_mbsesdk</id>
+  <title>Cariad guideline document for MBSE.SDK blockset</title>
+  <access>public</access>
+  <version>1</version>
+  <status>draft</status>
+  <author username="MBSD.SDK" domain="MBSD-SDK-Shared"/>
+  <copyright></copyright>
+  <coAuthors/>
+  <reviewers/>
+  <userProperties/>
+  <chapters>
+    <chapter uid="fb57b7e0-33bc-4c3a-bbe6-3761bbd6edbc" title="Uniform Appearance">
+      <description name="description" optional="false" private="false">
+        <description>This is the description of the chapter.</description>
+        <value><![CDATA[Guidelines for achieving a uniform appearance of the blocks
+<br />]]></value>
+      </description>
+      <guideline uid="97976ee3-2da9-42c4-bdd4-3ee47bb63af1" modifier="standard" refUid="23302a13-8366-4a09-a420-48dfce2be867" refId="cariad_bs_1000" refVersion="1" refTitle="Cariad brand on block icon">
+        <check uid="f794d3d7-9101-4246-b87d-e1697fcdb8b6" selectedForRun="true" refUid="830980ab-9237-41e1-9882-06f189af7db4" refId="mcheck_cariad_bs_1000" refVersion="1" refTitle="Cariad brand"/>
+      </guideline>
+      <guideline uid="08ab428a-36f4-46c8-9eec-576a235edbb5" modifier="standard" refUid="cbe2d6a4-6728-42d2-ad93-7cde7444dcb6" refId="cariad_bs_1001" refVersion="1" refTitle="Port labels">
+        <check uid="7f34181b-dd62-4526-a565-49e9acf48655" selectedForRun="true" refUid="7f35696a-77a5-4994-b1d7-ec85798c1c0f" refId="mcheck_cariad_bs_1001" refVersion="1" refTitle="Ports must be labeled"/>
+      </guideline>
+      <guideline uid="7d337cf5-7490-4f1d-8c60-756aa220d58f" modifier="standard" refUid="42221fd0-017f-4471-bd34-4a00898fc79f" refId="cariad_bs_1002" refVersion="1" refTitle="Hide block contents">
+        <check uid="a6cfbdc6-4025-464c-8439-9e5f070b2eea" selectedForRun="true" refUid="b35c7c69-b4f3-47cb-9705-c08f8b221fa8" refId="mcheck_cariad_bs_1002" refVersion="1" refTitle="Hide block contents"/>
+      </guideline>
+    </chapter>
+  </chapters>
+  <parameterSettings>
+    <check/>
+    <shared/>
+    <global/>
+  </parameterSettings>
+  <history>
+    <record timestamp="01/26/2022 15:19:39">
+      <author username="MBSD.SDK" domain="MBSD-SDK-Shared"/>
+      <comment>Guideline Document created.</comment>
+    </record>
+  </history>
+</guidelineDocument>

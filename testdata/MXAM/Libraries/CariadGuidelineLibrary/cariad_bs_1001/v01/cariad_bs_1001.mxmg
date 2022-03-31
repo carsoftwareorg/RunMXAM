@@ -1,0 +1,58 @@
+<guideline fileVersion="2">
+  <uid>cbe2d6a4-6728-42d2-ad93-7cde7444dcb6</uid>
+  <id>cariad_bs_1001</id>
+  <version>1</version>
+  <status>draft</status>
+  <preVersionUid></preVersionUid>
+  <author username="MBSD.SDK" domain="MBSD-SDK-Shared"/>
+  <coAuthors/>
+  <copyright>2022 Cariad</copyright>
+  <reviewers/>
+  <templateUid>9a285aeb-498e-4a4e-9e2e-3158177cd083</templateUid>
+  <title>Port labels</title>
+  <properties>
+    <enumeration name="Priority" optional="false" private="false" multi="false">
+      <description>The priority for this guideline.</description>
+      <enums>
+        <value>Mandatory</value>
+      </enums>
+    </enumeration>
+    <enumeration name="Rational" optional="false" private="false" multi="true">
+      <description>This is the rational for this guideline.</description>
+      <enums>
+        <value>Readability</value>
+      </enums>
+    </enumeration>
+    <enumeration name="Category" optional="false" private="false" multi="true">
+      <description>The category.</description>
+      <enums>
+        <value>Simulink</value>
+      </enums>
+    </enumeration>
+    <string name="MATLAB Version" optional="false" private="false">
+      <description>Applying MATLAB versions</description>
+      <value>all</value>
+    </string>
+    <string name="TargetLink Version" optional="false" private="false">
+      <description>Applying MATLAB versions</description>
+      <value>all</value>
+    </string>
+    <richtext name="Description" optional="false" private="false">
+      <description>This is a detailed description.</description>
+      <value><![CDATA[The ports of an MBSD.SDK library block must be labeled, which should be realized by setting the IconOpaque mask property to 'opaque-with-ports'. As a result, the name of the inport or outport block within the library block is used as label string.
+<br />]]></value>
+    </richtext>
+  </properties>
+  <checkReferences>
+    <reference refUid="7f35696a-77a5-4994-b1d7-ec85798c1c0f" refId="mcheck_cariad_bs_1001" refTitle="Ports must be labeled" refVersion="1"/>
+  </checkReferences>
+  <parameterSettings>
+    <check/>
+  </parameterSettings>
+  <history>
+    <record timestamp="01/27/2022 14:12:41">
+      <author username="MBSD.SDK" domain="MBSD-SDK-Shared"/>
+      <comment>Guideline created.</comment>
+    </record>
+  </history>
+</guideline>

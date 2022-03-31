@@ -1,0 +1,181 @@
+<guideline fileVersion="2">
+  <uid>fc544ea6-a783-4fa1-9029-535352b6c58c</uid>
+  <id>EF8_mr0297</id>
+  <version>1</version>
+  <status>released</status>
+  <preVersionUid></preVersionUid>
+  <author username="FEAA9I4" domain="DEAUDI00"/>
+  <coAuthors>
+    <coAuthor username="S5HPURS" domain="DEAUDI00"/>
+  </coAuthors>
+  <copyright></copyright>
+  <reviewers/>
+  <templateUid>87c1ed92-ff48-43b6-97e8-66b83cb40265</templateUid>
+  <title>Mathematical operations in Stateflow</title>
+  <properties>
+    <enumeration name="Priority" optional="false" private="false" multi="false">
+      <description>The priority for this guideline.</description>
+      <enums>
+        <value>recommended</value>
+      </enums>
+    </enumeration>
+    <string name="Scope" optional="true" private="false">
+      <description>Project specific scope.</description>
+      <value></value>
+    </string>
+    <enumeration name="Objective" optional="false" private="false" multi="true">
+      <description>This is the rational for this guideline.</description>
+      <enums>
+        <value>code generation</value>
+      </enums>
+    </enumeration>
+    <string name="Source" optional="true" private="false">
+      <description>Document and chapter this guideline is originally taken from.</description>
+      <value></value>
+    </string>
+    <string name="Reference" optional="true" private="false">
+      <description>Reference(s) to other documents.</description>
+      <value></value>
+    </string>
+    <string name="MATLAB Versions" optional="true" private="false">
+      <description>Related MATLAB versions.</description>
+      <value></value>
+    </string>
+    <string name="TargetLink Versions" optional="true" private="false">
+      <description>Related TargetLink versions</description>
+      <value></value>
+    </string>
+    <string name="Embedded Coder Versions" optional="true" private="false">
+      <description>Related Embedded Coder versions</description>
+      <value></value>
+    </string>
+    <enumeration name="Automatically Checkable" optional="false" private="false" multi="false">
+      <description>To what extent is the guideline automatically checkable?</description>
+      <enums>
+        <value>fully</value>
+      </enums>
+    </enumeration>
+    <enumeration name="Manual Review Required" optional="false" private="false" multi="false">
+      <description>Is a manual review of this guideline required?</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <richtext name="Summary" optional="false" private="true">
+      <description>Short summary of the guideline.</description>
+      <value><![CDATA[<p> Use in Stateflow only recommented mathematical operations. </p>]]></value>
+    </richtext>
+    <richtext name="Description" optional="false" private="false">
+      <description>Text describing the guideline in more detail.</description>
+      <value><![CDATA[<p> Check Linked Libraries<br /> By default the active libraries within the test object are not checked. The parameter &quot;Check Linked Libraries&quot; allows checking all subsystems within the test object including all active libraries. </p> 
+<p> Description<br /> Permitted Operations in Stateflow Algebraic: </p> 
+<ul> 
+ <li> a * b, Multiplication </li> 
+ <li> a / b, Division </li> 
+ <li> a + b, Addition </li> 
+ <li> a - b, Subtraction </li> 
+</ul> 
+<p> Relational </p> 
+<ul> 
+ <li> a &gt; b, Comparison of the first operand greater than the second operand </li> 
+ <li> a &lt; b, Comparison of the first operand less than the second operand </li> 
+ <li> a &gt;= b, Comparison of the first operand greater than or equal to the second operand </li> 
+ <li> a &lt;= b, Comparison of the first operand less than or equal to the second operand&nbsp; </li> 
+ <li> a&nbsp;== b, Comparison of equality of two operands </li> 
+ <li> a != b, Comparison of inequality of two operands </li> 
+</ul> 
+<p> Logical </p> 
+<ul> 
+ <li> a &amp;&amp; b, Logical AND of two operands </li> 
+ <li> a || b </li> 
+ <li> Logical OR of two operands </li> 
+</ul> 
+<p> Bitwise </p> 
+<ul> 
+ <li> a &gt;&gt; b, Shift operand a right by b bits </li> 
+ <li> a &lt;&lt; b, Shift operand a left by b bits </li> 
+ <li> a &amp; b, Bitwise AND of two operands </li> 
+ <li> a ^ b, Bitwise XOR of two operands </li> 
+ <li> a | b, Bitwise OR of two operands </li> 
+</ul> 
+<p> Unary </p> 
+<ul> 
+ <li> !a, Logical NOT of a </li> 
+ <li> -a, Negative of a </li> 
+ <li> a++, Increment a </li> 
+ <li> a--, Decrement a </li> 
+</ul> 
+<p> Assignment </p> 
+<ul> 
+ <li> a = expression, Simple assignment </li> 
+ <li> a += expression, Equivalent to a = a + expression </li> 
+ <li> a -= expression, Equivalent to a = a - expression </li> 
+ <li> a *= expression, Equivalent to a = a * expression </li> 
+ <li> a /= expression, Equivalent to a = a / expression </li> 
+ <li> a |= expression, Equivalent to a = a | expression (bit operation) </li> 
+ <li> a &amp;= expression, Equivalent to a = a &amp; expression (bit operation) </li> 
+ <li> a ^= expression, Equivalent to a = a ^ expression (bit operation) </li> 
+</ul> 
+<p> Operators in Conditions<br /> Stateflow conditions shall contain only logical (incl. logical NOT) and relational operators </p> 
+<p> Bit Operations<br /> Stateflow Option &quot;Enable C-like bit Operations&quot; shall be switched on. </p>]]></value>
+    </richtext>
+    <richtext name="Rationale" optional="false" private="false">
+      <description>Detailed explaination of the intention of this guideline.</description>
+      <value><![CDATA[<p>  MISRA SLSF: 038 (ABC)</p>]]></value>
+    </richtext>
+    <richtext name="Example" optional="true" private="false">
+      <description>Example describing the intention of this guideline.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Counter Example" optional="true" private="false">
+      <description>Counter example describing the intention of this guideline.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Review Measures" optional="true" private="false">
+      <description>A checklist of what is to be done to manually review this guideline.</description>
+      <value></value>
+    </richtext>
+    <string name="Related Guidelines" optional="true" private="false">
+      <description>Reference to other guidelines and explaination of the relationships.</description>
+      <value></value>
+    </string>
+    <enumeration name="Model Type" optional="false" private="false" multi="true">
+      <description>The type of the model that should conform to the guideline.</description>
+      <enums>
+        <value>functional model</value>
+      </enums>
+    </enumeration>
+    <enumeration name="ISO 26262-6 Mapping" optional="true" private="false" multi="true">
+      <description>Mapping of the guideline to the respective category as defined in ISO 26262-6 Table 1 (T1) and Table 8 (T8).
+MES suggests a mapping for guidelines as part of the original distribution.
+This mapping information is not part of the original guideline document as provided by the publisher.</description>
+      <enums/>
+    </enumeration>
+    <enumeration name="ISO 25119-3 Mapping" optional="true" private="false" multi="true">
+      <description>Mapping of the guideline to the respective category as defined in ISO 25119-3 Table 3.
+MES suggests a mapping for guidelines as part of the original distribution.
+This mapping information is not part of the original guideline document as provided by the publisher.</description>
+      <enums/>
+    </enumeration>
+    <string name="Last Change" optional="true" private="false">
+      <description>In which version of the source guideline document was the guideline changed at last.</description>
+      <value></value>
+    </string>
+  </properties>
+  <checkReferences>
+    <reference refUid="3170e6db-8a03-4ca9-885b-50648f821414" refId="mcheck_EF8_mr0297" refTitle="Mathematical operations in Stateflow" refVersion="1"/>
+  </checkReferences>
+  <parameterSettings>
+    <check/>
+  </parameterSettings>
+  <history>
+    <record timestamp="06/10/2020 11:25:55">
+      <author username="FEAA9I4" domain="DEAUDI00"/>
+      <comment>Guideline created.</comment>
+    </record>
+    <record timestamp="10/15/2020 17:50:29">
+      <author username="FEAA9I4" domain="DEAUDI00"/>
+      <comment>Status changed from [DRAFT] to [RELEASED]. </comment>
+    </record>
+  </history>
+</guideline>

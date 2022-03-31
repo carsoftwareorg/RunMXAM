@@ -1,0 +1,114 @@
+<check fileVersion="2">
+  <uid>03e7dd66-8599-47cb-83e3-d5d1b67b377f</uid>
+  <id>mcheck_EF8_mr18</id>
+  <version>3</version>
+  <status>released</status>
+  <preVersionUid></preVersionUid>
+  <author username="TGULSAN" domain="DEAUDI00" email="extern.sanat.gulvadi@audi.de"/>
+  <coAuthors>
+    <coAuthor username="FEAA9I4" domain="DEAUDI00"/>
+    <coAuthor username="FEDAIZE" domain="DEAUDI00"/>
+    <coAuthor username="S5HPURS" domain="DEAUDI00" firstname="Arno" lastname="Dietsche" email="extern.Arno.Dietsche@audi.de"/>
+  </coAuthors>
+  <copyright></copyright>
+  <reviewers/>
+  <templateUid>206e6a94-528a-7a2a-a982-901a9fd65b09</templateUid>
+  <title>Datatype consistency between Simulink and TargetLink at TL Ports</title>
+  <adapter version="2.3">com.modelengineers.mxam.tooladapter.matlab</adapter>
+  <executable>mes_EF8_mr18.m</executable>
+  <repairOption>true</repairOption>
+  <timeConsuming>false</timeConsuming>
+  <properties>
+    <enumeration name="Compiled Model Required" optional="false" private="false" multi="false">
+      <description>Indicates whether the check needs a compiled model.</description>
+      <enums>
+        <value>yes</value>
+      </enums>
+    </enumeration>
+    <enumeration name="TargetLink Required" optional="false" private="false" multi="false">
+      <description>Indicates whether this check requires a TargetLink installation or not.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <enumeration name="Model Root Required" optional="false" private="false" multi="false">
+      <description>Indicates whether this check analyses up from the model root.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <string name="MATLAB Versions" optional="true" private="false">
+      <description>Related MATLAB versions</description>
+      <value>all</value>
+    </string>
+    <string name="TargetLink Versions" optional="true" private="false">
+      <description>Related TargetLink versions</description>
+      <value>all</value>
+    </string>
+    <string name="Embedded Coder Versions" optional="true" private="false">
+      <description>Related Embedded Coder versions</description>
+      <value>irrelevant</value>
+    </string>
+    <richtext name="Pass-Fail Criteria" optional="false" private="false">
+      <description>This is a detailed description of the pass and fail criteria.</description>
+      <value>Datatypes between Simulink and TargetLink at a TL Port is inconsistent.</value>
+    </richtext>
+    <richtext name="Technical Notes" optional="true" private="false">
+      <description>Important notes concerning the implementation of the check.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Solution" optional="false" private="false">
+      <description>A solution for the user to repair faulty elements.</description>
+      <value>Rename the parameter in the SWID</value>
+    </richtext>
+    <richtext name="Repair Action" optional="false" private="false">
+      <description>How the check automatically repairs faulty elements.</description>
+      <value>-</value>
+    </richtext>
+    <richtext name="Example" optional="true" private="false">
+      <description>Example of how the check functions.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Prerequisites" optional="true" private="false">
+      <description>Prerequisites of the model for the check to function properly.</description>
+      <value></value>
+    </richtext>
+  </properties>
+  <parameterSpecifications/>
+  <parameterReferences>
+    <parameterReferences sourceType="shared">
+      <parameterName>Audi.IsFloating</parameterName>
+      <sourceIdentifier>4a3ee8ce-11d7-4284-b98c-a0e3b3be942e</sourceIdentifier>
+    </parameterReferences>
+  </parameterReferences>
+  <history>
+    <record timestamp="01/12/2016 11:52:43">
+      <author username="TGULSAN" domain="DEAUDI00" email="extern.sanat.gulvadi@audi.de"/>
+      <comment>Check created by MXAM 1 importer.</comment>
+    </record>
+    <record timestamp="10/28/2016 09:44:24">
+      <author username="FedaiZe" domain="DEAUDI00"/>
+      <comment>Compile Modus und TL is required aktivert</comment>
+    </record>
+    <record timestamp="08/05/2019 16:26:38">
+      <author username="FEAA9I4" domain="DEAUDI00"/>
+      <comment>Status changed from [DRAFT] to [RELEASED]. </comment>
+    </record>
+    <record timestamp="06/02/2020 17:36:09">
+      <author username="FEAA9I4" domain="DEAUDI00"/>
+      <comment>A new version [2] of [mcheck_EF8_mr18: Datatype consistency between Simulink and TargetLink at TL Ports (v01)] has been created.</comment>
+    </record>
+    <record timestamp="10/15/2020 16:24:06">
+      <author username="FEAA9I4" domain="DEAUDI00"/>
+      <comment>Status changed from [DRAFT] to [RELEASED]. </comment>
+    </record>
+    <record timestamp="03/19/2021 07:59:18">
+      <author username="FEAA9I4" domain="DEAUDI00"/>
+      <comment>A new version [3] of [mcheck_EF8_mr18: Datatype consistency between Simulink and TargetLink at TL Ports (v02)] has been created.</comment>
+    </record>
+    <record timestamp="03/22/2021 08:29:05">
+      <author username="FEAA9I4" domain="DEAUDI00"/>
+      <comment>Status changed from [DRAFT] to [RELEASED]. </comment>
+    </record>
+  </history>
+</check>

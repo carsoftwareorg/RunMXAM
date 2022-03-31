@@ -1,0 +1,105 @@
+<check fileVersion="2">
+  <uid>e510e6f0-0333-4e95-9832-35d546325ee9</uid>
+  <id>mcheck_EF8_mr31</id>
+  <version>4</version>
+  <status>released</status>
+  <preVersionUid></preVersionUid>
+  <author username="FEAA9I4" domain="DEAUDI00"/>
+  <coAuthors>
+    <coAuthor username="S5HPURS" domain="DEAUDI00" firstname="Arno" lastname="Dietsche" email="extern.Arno.Dietsche@audi.de"/>
+  </coAuthors>
+  <copyright></copyright>
+  <reviewers/>
+  <templateUid>206e6a94-528a-4a1d-a982-901a9fd65b09</templateUid>
+  <title>Mandatory connection of matching names for in-/outports and subsystem signals</title>
+  <adapter version="2.3">com.modelengineers.mxam.tooladapter.matlab</adapter>
+  <executable>mes_EF8_mr31.m</executable>
+  <repairOption>false</repairOption>
+  <timeConsuming>false</timeConsuming>
+  <properties>
+    <enumeration name="Compiled Model Required" optional="false" private="false" multi="false">
+      <description>Indicates whether the check needs a compiled model.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <enumeration name="TargetLink Required" optional="false" private="false" multi="false">
+      <description>Indicates whether this check reuires a TargetLink installation or not.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <enumeration name="Model Root Required" optional="false" private="false" multi="false">
+      <description>Indicates whether this check analyses up from the model root.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <richtext name="Pass-Fail Criteria" optional="false" private="false">
+      <description>This is a detailed description of the pass and fail criteria.</description>
+      <value><![CDATA[<p style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri; MARGIN: 0in"> The check tests all Inports of all Subsystems. The Check will pass, if </p> 
+<ul> 
+ <li> the name of the examined Signal (so the Inport or the Outport of a Bus Selector) is equal to the Inportname of the connected Subsystem or </li> 
+ <li> the Inportname of the connected Subsystem belongs not to the list of all Signalnames of the Subsystem on higher level or<br /> </li> 
+ <li> the Inportname of the connected Subsystem is not longer as three letters (so e.g. &quot;In1&quot; is excluded). </li> 
+</ul>Otherwise the check throws an error.
+<br />]]></value>
+    </richtext>
+    <richtext name="Technical Notes" optional="true" private="false">
+      <description>Important notes concerning the implementation of the check.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Solution" optional="false" private="false">
+      <description>A solution for the user to repair faulty elements.</description>
+      <value><![CDATA[Delete the wrong lines manually and connect it new.
+<br />]]></value>
+    </richtext>
+    <richtext name="Repair Action" optional="false" private="false">
+      <description>How the check automatically repairs faulty elements.</description>
+      <value><![CDATA[&nbsp;None
+<br />]]></value>
+    </richtext>
+    <enumeration name="Analysed Element Type" optional="false" private="false" multi="true">
+      <description>The element types which the checks analyses.</description>
+      <enums>
+        <value>block</value>
+      </enums>
+    </enumeration>
+  </properties>
+  <parameterSpecifications/>
+  <parameterReferences/>
+  <history>
+    <record timestamp="07/05/2018 17:06:38">
+      <author username="FEAA9I4" domain="DEAUDI00"/>
+      <comment>Check created.</comment>
+    </record>
+    <record timestamp="08/05/2019 16:29:59">
+      <author username="FEAA9I4" domain="DEAUDI00"/>
+      <comment>Status changed from [DRAFT] to [RELEASED]. </comment>
+    </record>
+    <record timestamp="08/05/2019 16:39:24">
+      <author username="FEAA9I4" domain="DEAUDI00"/>
+      <comment>A new version [2] of [mcheck_EF8_mr31: Check for transposed signals only Inports (v01)] has been created.</comment>
+    </record>
+    <record timestamp="10/04/2019 08:50:39">
+      <author username="FEAA9I4" domain="DEAUDI00"/>
+      <comment>Status changed from [DRAFT] to [RELEASED]. </comment>
+    </record>
+    <record timestamp="10/04/2019 08:53:29">
+      <author username="FEAA9I4" domain="DEAUDI00"/>
+      <comment>A new version [3] of [mcheck_EF8_mr31: Mandatory connection of matching names for in-/outports and subsystem signals (v02)] has been created.</comment>
+    </record>
+    <record timestamp="12/13/2019 13:49:32">
+      <author username="FEAA9I4" domain="DEAUDI00"/>
+      <comment>Status changed from [DRAFT] to [RELEASED]. MXAM 5.0 Checkset 5.2</comment>
+    </record>
+    <record timestamp="10/22/2021 11:50:57">
+      <author username="S5HPURS" domain="DEAUDI00" firstname="Arno" lastname="Dietsche" email="extern.arno.dietsche@audi.de"/>
+      <comment>A new version [4] of [mcheck_EF8_mr31: Mandatory connection of matching names for in-/outports and subsystem signals (v03)] has been created.</comment>
+    </record>
+    <record timestamp="03/02/2022 16:59:31">
+      <author username="FEAA9I4" domain="DEAUDI00"/>
+      <comment>Status changed from [DRAFT] to [RELEASED]. </comment>
+    </record>
+  </history>
+</check>

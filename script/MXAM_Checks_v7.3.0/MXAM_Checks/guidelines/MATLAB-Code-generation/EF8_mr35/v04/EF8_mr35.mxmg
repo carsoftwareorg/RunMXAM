@@ -1,0 +1,92 @@
+<guideline fileVersion="2">
+  <uid>0fbb3eeb-afad-481f-8f08-2c7ba30cff65</uid>
+  <id>EF8_mr35</id>
+  <version>4</version>
+  <status>released</status>
+  <preVersionUid></preVersionUid>
+  <author username="FEAA9I4" domain="DEAUDI00"/>
+  <coAuthors>
+    <coAuthor username="FEDAIZE" domain="DEAUDI00"/>
+    <coAuthor username="S5HPURS" domain="DEAUDI00" firstname="Arno" lastname="Dietsche" email="extern.Arno.Dietsche@audi.de"/>
+    <coAuthor username="AZDZARE" domain="DEAUDI00"/>
+  </coAuthors>
+  <copyright></copyright>
+  <reviewers/>
+  <templateUid>629df1f2-5025-496d-af5e-fb2b09f8a928</templateUid>
+  <title>Usage of DataDictionary properties</title>
+  <properties>
+    <boolean name="Boolean attribute" optional="true" private="false">
+      <description>boolean example</description>
+      <value>true</value>
+    </boolean>
+    <double name="Double attribute" optional="true" private="false">
+      <description>double example</description>
+      <value>1.0</value>
+    </double>
+    <integer name="Integer attribute" optional="true" private="false">
+      <description>integer example</description>
+      <value>1</value>
+    </integer>
+    <richtext name="Richtext attribute" optional="true" private="false">
+      <description>richtext example</description>
+      <value></value>
+    </richtext>
+    <string name="String attribute" optional="true" private="false">
+      <description>string example</description>
+      <value>-</value>
+    </string>
+    <enumeration name="Enumeration attribute single" optional="true" private="false" multi="false">
+      <description>enumeration attribute (single selection)</description>
+      <enums>
+        <value>passed</value>
+      </enums>
+    </enumeration>
+    <enumeration name="Enumeration attribute multi" optional="true" private="false" multi="true">
+      <description>enumeration attribute (multi selection)</description>
+      <enums>
+        <value>unknown</value>
+      </enums>
+    </enumeration>
+  </properties>
+  <checkReferences>
+    <reference refUid="06cd0bb9-d1b4-4794-b889-54723672e98f" refId="mcheck_EF8_mr35ab" refTitle="Consistent default data type in DD" refVersion="1"/>
+    <reference refUid="b45e4f4c-767c-42a2-a137-50593a246581" refId="mcheck_EF8_mr35c" refTitle="Avoid usage of TLDatatype node" refVersion="1"/>
+  </checkReferences>
+  <parameterSettings>
+    <check/>
+  </parameterSettings>
+  <history>
+    <record timestamp="10/22/2018 07:42:54">
+      <author username="FEAA9I4" domain="DEAUDI00"/>
+      <comment>Guideline created.</comment>
+    </record>
+    <record timestamp="07/22/2019 17:16:59">
+      <author username="AZDZARE" domain="DEAUDI00"/>
+      <comment>Status changed from [DRAFT] to [RELEASED]. </comment>
+    </record>
+    <record timestamp="07/22/2019 17:20:29">
+      <author username="AZDZARE" domain="DEAUDI00"/>
+      <comment>A new version [2] of [EF8_mr35: Consistency default data type (v01)] has been created.</comment>
+    </record>
+    <record timestamp="08/05/2019 15:50:57">
+      <author username="FEAA9I4" domain="DEAUDI00"/>
+      <comment>Status changed from [DRAFT] to [RELEASED]. </comment>
+    </record>
+    <record timestamp="10/15/2020 17:53:50">
+      <author username="FEAA9I4" domain="DEAUDI00"/>
+      <comment>A new version [3] of [EF8_mr35: Consistency default data type (v02)] has been created.</comment>
+    </record>
+    <record timestamp="10/15/2020 17:59:27">
+      <author username="FEAA9I4" domain="DEAUDI00"/>
+      <comment>Status changed from [DRAFT] to [RELEASED]. </comment>
+    </record>
+    <record timestamp="07/07/2021 11:52:52">
+      <author username="S5HPURS" domain="DEAUDI00" firstname="Arno" lastname="Dietsche" email="extern.Arno.Dietsche@audi.de"/>
+      <comment>A new version [4] of [EF8_mr35: Consistency default data type (v03)] has been created.</comment>
+    </record>
+    <record timestamp="08/17/2021 16:12:53">
+      <author username="FEAA9I4" domain="DEAUDI00"/>
+      <comment>Status changed from [DRAFT] to [RELEASED]. </comment>
+    </record>
+  </history>
+</guideline>

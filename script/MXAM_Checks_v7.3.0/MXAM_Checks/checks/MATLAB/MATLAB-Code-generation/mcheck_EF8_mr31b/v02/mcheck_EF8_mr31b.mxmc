@@ -1,0 +1,87 @@
+<check fileVersion="2">
+  <uid>445bc032-08ce-4031-8f23-cd065357911d</uid>
+  <id>mcheck_EF8_mr31b</id>
+  <version>2</version>
+  <status>released</status>
+  <preVersionUid></preVersionUid>
+  <author username="FEAA9I4" domain="DEAUDI00"/>
+  <coAuthors/>
+  <copyright></copyright>
+  <reviewers/>
+  <templateUid>206e6a94-528a-4a1d-a982-901a9fd65b09</templateUid>
+  <title>Mandatory connection of matching names for bus signals</title>
+  <adapter version="2.3">com.modelengineers.mxam.tooladapter.matlab</adapter>
+  <executable>mes_EF8_mr31b.m</executable>
+  <repairOption>false</repairOption>
+  <timeConsuming>false</timeConsuming>
+  <properties>
+    <enumeration name="Compiled Model Required" optional="false" private="false" multi="false">
+      <description>Indicates whether the check needs a compiled model.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <enumeration name="TargetLink Required" optional="false" private="false" multi="false">
+      <description>Indicates whether this check reuires a TargetLink installation or not.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <enumeration name="Model Root Required" optional="false" private="false" multi="false">
+      <description>Indicates whether this check analyses up from the model root.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <richtext name="Pass-Fail Criteria" optional="false" private="false">
+      <description>This is a detailed description of the pass and fail criteria.</description>
+      <value><![CDATA[<p style="margin:0in;font-family:Calibri;font-size:11.0pt"> The check tests the Outports of the Bus Selectors. The Check will pass, if </p> 
+<ul> 
+ <li> the name of the examined Signal (so the Inport or the Outport of a Bus Selector) is equal to the Inportname of the connected Subsystem or </li> 
+ <li> the Inportname of the connected Subsystem belongs not to the list of all Signalnames of the Subsystem on higher level or<br /> </li> 
+ <li> the Inportname of the connected Subsystem is not longer as three letters (so e.g. &quot;In1&quot; is excluded). </li> 
+</ul>Otherwise the check throws an error.
+<br />]]></value>
+    </richtext>
+    <richtext name="Technical Notes" optional="true" private="false">
+      <description>Important notes concerning the implementation of the check.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Solution" optional="false" private="false">
+      <description>A solution for the user to repair faulty elements.</description>
+      <value><![CDATA[Delete the wrong lines manually and connect it new.
+<br />]]></value>
+    </richtext>
+    <richtext name="Repair Action" optional="false" private="false">
+      <description>How the check automatically repairs faulty elements.</description>
+      <value><![CDATA[&nbsp;None
+<br />]]></value>
+    </richtext>
+    <enumeration name="Analysed Element Type" optional="false" private="false" multi="true">
+      <description>The element types which the checks analyses.</description>
+      <enums>
+        <value>block</value>
+      </enums>
+    </enumeration>
+  </properties>
+  <parameterSpecifications/>
+  <parameterReferences/>
+  <history>
+    <record timestamp="01/30/2019 13:23:45">
+      <author username="FEAA9I4" domain="DEAUDI00"/>
+      <comment><![CDATA[Copied from 'Check for transposed signals' (ID: mcheck_EF8_mr31, Version: v01, Library: MATLAB-Code-generation, Author: FEAA9I4)]]></comment>
+    </record>
+    <record timestamp="08/05/2019 16:34:26">
+      <author username="FEAA9I4" domain="DEAUDI00"/>
+      <comment>Status changed from [DRAFT] to [RELEASED]. </comment>
+    </record>
+    <record timestamp="08/05/2019 16:41:27">
+      <author username="FEAA9I4" domain="DEAUDI00"/>
+      <comment>A new version [2] of [mcheck_EF8_mr31b: Check for transposed signals only Busselectors (v01)] has been created.</comment>
+    </record>
+    <record timestamp="12/13/2019 13:49:47">
+      <author username="FEAA9I4" domain="DEAUDI00"/>
+      <comment>Status changed from [DRAFT] to [RELEASED]. MXAM 5.0 Checkset 5.2</comment>
+    </record>
+  </history>
+</check>

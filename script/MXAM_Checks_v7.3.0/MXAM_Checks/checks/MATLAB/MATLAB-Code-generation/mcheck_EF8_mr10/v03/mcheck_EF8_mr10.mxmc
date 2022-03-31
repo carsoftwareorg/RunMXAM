@@ -1,0 +1,113 @@
+<check fileVersion="2">
+  <uid>1817e7d1-4bfc-40fc-b2d0-d0a0fcaa33fc</uid>
+  <id>mcheck_EF8_mr10</id>
+  <version>3</version>
+  <status>released</status>
+  <preVersionUid></preVersionUid>
+  <author username="TGULSAN" domain="DEAUDI00" email="extern.sanat.gulvadi@audi.de"/>
+  <coAuthors>
+    <coAuthor username="FEAA9I4" domain="DEAUDI00"/>
+    <coAuthor username="FEDAIZE" domain="DEAUDI00"/>
+  </coAuthors>
+  <copyright></copyright>
+  <reviewers/>
+  <templateUid>206e6a94-528a-7a2a-a982-901a9fd65b09</templateUid>
+  <title>Naming conventions of Axes</title>
+  <adapter version="2.3">com.modelengineers.mxam.tooladapter.matlab</adapter>
+  <executable>mes_EF8_mr10.m</executable>
+  <repairOption>false</repairOption>
+  <timeConsuming>false</timeConsuming>
+  <properties>
+    <enumeration name="Compiled Model Required" optional="false" private="false" multi="false">
+      <description>Indicates whether the check needs a compiled model.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <enumeration name="TargetLink Required" optional="false" private="false" multi="false">
+      <description>Indicates whether this check requires a TargetLink installation or not.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <enumeration name="Model Root Required" optional="false" private="false" multi="false">
+      <description>Indicates whether this check analyses up from the model root.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <string name="MATLAB Versions" optional="true" private="false">
+      <description>Related MATLAB versions</description>
+      <value>all</value>
+    </string>
+    <string name="TargetLink Versions" optional="true" private="false">
+      <description>Related TargetLink versions</description>
+      <value>all</value>
+    </string>
+    <string name="Embedded Coder Versions" optional="true" private="false">
+      <description>Related Embedded Coder versions</description>
+      <value>irrelevant</value>
+    </string>
+    <richtext name="Pass-Fail Criteria" optional="false" private="false">
+      <description>This is a detailed description of the pass and fail criteria.</description>
+      <value><![CDATA[Passes if the parameters used for x-axes end with &quot;_Vx&quot; and those for y-axes end with &quot;_Vy&quot;.]]></value>
+    </richtext>
+    <richtext name="Technical Notes" optional="true" private="false">
+      <description>Important notes concerning the implementation of the check.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Solution" optional="false" private="false">
+      <description>A solution for the user to repair faulty elements.</description>
+      <value>Enter the correct name</value>
+    </richtext>
+    <richtext name="Repair Action" optional="false" private="false">
+      <description>How the check automatically repairs faulty elements.</description>
+      <value>-</value>
+    </richtext>
+    <richtext name="Example" optional="true" private="false">
+      <description>Example of how the check functions.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Prerequisites" optional="true" private="false">
+      <description>Prerequisites of the model for the check to function properly.</description>
+      <value></value>
+    </richtext>
+  </properties>
+  <parameterSpecifications/>
+  <parameterReferences>
+    <parameterReferences sourceType="shared">
+      <parameterName>Audi.ECU</parameterName>
+      <sourceIdentifier>4a3ee8ce-11d7-4284-b98c-a0e3b3be942e</sourceIdentifier>
+    </parameterReferences>
+  </parameterReferences>
+  <history>
+    <record timestamp="01/12/2016 11:52:43">
+      <author username="TGULSAN" domain="DEAUDI00" email="extern.sanat.gulvadi@audi.de"/>
+      <comment>Check created by MXAM 1 importer.</comment>
+    </record>
+    <record timestamp="08/05/2019 16:20:34">
+      <author username="FEAA9I4" domain="DEAUDI00"/>
+      <comment>Status changed from [DRAFT] to [RELEASED]. </comment>
+    </record>
+    <record timestamp="10/14/2019 09:53:20">
+      <author username="FEAA9I4" domain="DEAUDI00"/>
+      <comment>A new version [2] of [mcheck_EF8_mr10: Naming conventions of Axes (v01)] has been created.</comment>
+    </record>
+    <record timestamp="10/14/2019 09:56:11">
+      <author username="FEAA9I4" domain="DEAUDI00"/>
+      <comment>Distinguish between old an new Toolchain</comment>
+    </record>
+    <record timestamp="10/14/2019 09:56:23">
+      <author username="FEAA9I4" domain="DEAUDI00"/>
+      <comment>Status changed from [DRAFT] to [RELEASED]. </comment>
+    </record>
+    <record timestamp="10/12/2020 11:42:34">
+      <author username="FEAA9I4" domain="DEAUDI00"/>
+      <comment>A new version [3] of [mcheck_EF8_mr10: Naming conventions of Axes (v02)] has been created.</comment>
+    </record>
+    <record timestamp="10/15/2020 16:23:32">
+      <author username="FEAA9I4" domain="DEAUDI00"/>
+      <comment>Status changed from [DRAFT] to [RELEASED]. </comment>
+    </record>
+  </history>
+</check>

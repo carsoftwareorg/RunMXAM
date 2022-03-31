@@ -1,0 +1,12 @@
+<library type="GuidelineLibrary" id="MATLAB-Code-generation" title="Audi EF-8" uid="c804a653-aa79-405f-b77b-cecedc77d576">
+  <managers>
+    <manager username="TGULSAN" domain="DEAUDI00" email="extern.sanat.gulvadi@audi.de"/>
+    <manager username="FEAA9I4" domain="DEAUDI00" firstname="Luca" lastname="Landwehrjohann" email="extern.luca.landwehrjohann@audi.de"/>
+    <manager username="FEDAIZE" domain="DEAUDI00" firstname="Zeki" lastname="Fedai" email="zeki.fedai@audi.de"/>
+    <manager username="S5HPURS" domain="DEAUDI00" firstname="Arno" lastname="Dietsche" email="extern.Arno.Dietsche@audi.de"/>
+  </managers>
+  <authors>
+    <author username="FEDAIZE" domain="DEAUDI00"/>
+  </authors>
+  <access>protected</access>
+</library>

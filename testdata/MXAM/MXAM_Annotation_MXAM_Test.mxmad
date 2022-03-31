@@ -1,0 +1,203 @@
+<annotationDefinition fileVersion="1" annotationtype="Report Annotation">
+  <uid>18bde1ff-41d5-4f64-88a1-c601e5e4370a</uid>
+  <id>MXAM_Annotation_MXAM_Test</id>
+  <version>1</version>
+  <annotations>
+    <annotation id="Report Annotation 1_01/21/2022 12:41:04" adapterId="com.modelengineers.mxam.tooladapter.matlab">
+      <author username="MBSD.SDK" domain="MBSD-SDK-Shared"/>
+      <date>01/21/2022 12:41:04</date>
+      <modifiedDate>01/21/2022 12:42:36</modifiedDate>
+      <comment>Minimum and maximum values are determined by the integer datatype.</comment>
+      <checks>
+        <check>dspace_tl_5_1/General Guidelines for Simulink, Stateflow, and TargetLink/Fixed-Point Code Generation/TL_ADV_OPTI_CONSTRAINTS/mcheck_mes_cgtl_4203</check>
+      </checks>
+      <mappedProject>MBSD.SDK Blockset GuideLines</mappedProject>
+      <mapping>
+        <xElementIdentifier conversionTargetId="matlab.XMatlabElementIdentifier" marshaller="emf"><![CDATA[<XMatlab:XMatlabElementIdentifier xmlns:XMatlab="platform:/resource/com.modelengineers.mxam.tooladapter.matlab/models/domain/matlab/7.1.0" artifactName="MXAM_Test" elementIdentifier="MXAM_Test/BitSet/Subsystem/BitSet/InPort,&#10;InPort,&#10;block,&#10;&lt;Id not set&gt;: Consider specifying min/max values for the block &quot;InPort&quot; but only in case they are known in advance and the user can guarantee that they will never be exceeded." name="InPort" path="MXAM_Test/BitSet/Subsystem/BitSet/InPort" qualifier="block" sid="" version="5.1.0.xMessage">
+    <message messageId="&lt;Id not set&gt;" messageText="Consider specifying min/max values for the block &quot;InPort&quot; but only in case they are known in advance and the user can guarantee that they will never be exceeded."/>
+</XMatlab:XMatlabElementIdentifier>
+]]></xElementIdentifier>
+        <from>Review</from>
+        <to></to>
+      </mapping>
+      <finding>
+        <artifact>MXAM_Test</artifact>
+        <name>InPort</name>
+        <path>MXAM_Test/BitSet/Subsystem/BitSet/InPort</path>
+        <checkId>mcheck_mes_cgtl_4203</checkId>
+        <message><![CDATA[Consider specifying min/max values for the block &quot;InPort&quot; but only in case they are known in advance and the user can guarantee that they will never be exceeded.]]></message>
+        <messageId><![CDATA[&lt;Id not set&gt;]]></messageId>
+        <qualifier>block</qualifier>
+        <result>REVIEW</result>
+      </finding>
+    </annotation>
+    <annotation id="Report Annotation 2_01/21/2022 12:43:15" adapterId="com.modelengineers.mxam.tooladapter.matlab">
+      <author username="MBSD.SDK" domain="MBSD-SDK-Shared"/>
+      <date>01/21/2022 12:43:15</date>
+      <modifiedDate>01/21/2022 12:43:19</modifiedDate>
+      <comment>Minimum and maximum values are determined by the integer datatype.</comment>
+      <checks>
+        <check>dspace_tl_5_1/General Guidelines for Simulink, Stateflow, and TargetLink/Fixed-Point Code Generation/TL_ADV_OPTI_CONSTRAINTS/mcheck_mes_cgtl_4203</check>
+      </checks>
+      <mappedProject>MBSD.SDK Blockset GuideLines</mappedProject>
+      <mapping>
+        <xElementIdentifier conversionTargetId="matlab.XMatlabElementIdentifier" marshaller="emf"><![CDATA[<XMatlab:XMatlabElementIdentifier xmlns:XMatlab="platform:/resource/com.modelengineers.mxam.tooladapter.matlab/models/domain/matlab/7.1.0" artifactName="MXAM_Test" elementIdentifier="MXAM_Test/BitSet/Subsystem/BitSet/OutPort,&#10;OutPort,&#10;block,&#10;&lt;Id not set&gt;: Consider specifying min/max values for the block &quot;OutPort&quot; but only in case they are known in advance and the user can guarantee that they will never be exceeded." name="OutPort" path="MXAM_Test/BitSet/Subsystem/BitSet/OutPort" qualifier="block" sid="" version="5.1.0.xMessage">
+    <message messageId="&lt;Id not set&gt;" messageText="Consider specifying min/max values for the block &quot;OutPort&quot; but only in case they are known in advance and the user can guarantee that they will never be exceeded."/>
+</XMatlab:XMatlabElementIdentifier>
+]]></xElementIdentifier>
+        <from>Review</from>
+        <to></to>
+      </mapping>
+      <finding>
+        <artifact>MXAM_Test</artifact>
+        <name>OutPort</name>
+        <path>MXAM_Test/BitSet/Subsystem/BitSet/OutPort</path>
+        <checkId>mcheck_mes_cgtl_4203</checkId>
+        <message><![CDATA[Consider specifying min/max values for the block &quot;OutPort&quot; but only in case they are known in advance and the user can guarantee that they will never be exceeded.]]></message>
+        <messageId><![CDATA[&lt;Id not set&gt;]]></messageId>
+        <qualifier>block</qualifier>
+        <result>REVIEW</result>
+      </finding>
+    </annotation>
+    <annotation id="Report Annotation 3_01/21/2022 12:43:51" adapterId="com.modelengineers.mxam.tooladapter.matlab">
+      <author username="MBSD.SDK" domain="MBSD-SDK-Shared"/>
+      <date>01/21/2022 12:43:51</date>
+      <modifiedDate>01/21/2022 12:44:28</modifiedDate>
+      <comment>Minimum or maximum values are not available.</comment>
+      <checks>
+        <check>dspace_tl_5_1/General Guidelines for Simulink, Stateflow, and TargetLink/Fixed-Point Code Generation/TL_ADV_OPTI_CONSTRAINTS/mcheck_mes_cgtl_4203</check>
+      </checks>
+      <mappedProject>MBSD.SDK Blockset GuideLines</mappedProject>
+      <mapping>
+        <xElementIdentifier conversionTargetId="matlab.XMatlabElementIdentifier" marshaller="emf"><![CDATA[<XMatlab:XMatlabElementIdentifier xmlns:XMatlab="platform:/resource/com.modelengineers.mxam.tooladapter.matlab/models/domain/matlab/7.1.0" artifactName="MXAM_Test" elementIdentifier="MXAM_Test/DiscreteTimeIntegrator/Subsystem/DiscreteTimeIntegrator/InPort,&#10;InPort,&#10;block,&#10;&lt;Id not set&gt;: Consider specifying min/max values for the block &quot;InPort&quot; but only in case they are known in advance and the user can guarantee that they will never be exceeded." name="InPort" path="MXAM_Test/DiscreteTimeIntegrator/Subsystem/DiscreteTimeIntegrator/InPort" qualifier="block" sid="" version="5.1.0.xMessage">
+    <message messageId="&lt;Id not set&gt;" messageText="Consider specifying min/max values for the block &quot;InPort&quot; but only in case they are known in advance and the user can guarantee that they will never be exceeded."/>
+</XMatlab:XMatlabElementIdentifier>
+]]></xElementIdentifier>
+        <from>Review</from>
+        <to></to>
+      </mapping>
+      <finding>
+        <artifact>MXAM_Test</artifact>
+        <name>InPort</name>
+        <path>MXAM_Test/DiscreteTimeIntegrator/Subsystem/DiscreteTimeIntegrator/InPort</path>
+        <checkId>mcheck_mes_cgtl_4203</checkId>
+        <message><![CDATA[Consider specifying min/max values for the block &quot;InPort&quot; but only in case they are known in advance and the user can guarantee that they will never be exceeded.]]></message>
+        <messageId><![CDATA[&lt;Id not set&gt;]]></messageId>
+        <qualifier>block</qualifier>
+        <result>REVIEW</result>
+      </finding>
+    </annotation>
+    <annotation id="Report Annotation 4_01/21/2022 12:44:40" adapterId="com.modelengineers.mxam.tooladapter.matlab">
+      <author username="MBSD.SDK" domain="MBSD-SDK-Shared"/>
+      <date>01/21/2022 12:44:40</date>
+      <modifiedDate>01/21/2022 12:44:49</modifiedDate>
+      <comment>Minimum or maximum values are not available.</comment>
+      <checks>
+        <check>dspace_tl_5_1/General Guidelines for Simulink, Stateflow, and TargetLink/Fixed-Point Code Generation/TL_ADV_OPTI_CONSTRAINTS/mcheck_mes_cgtl_4203</check>
+      </checks>
+      <mappedProject>MBSD.SDK Blockset GuideLines</mappedProject>
+      <mapping>
+        <xElementIdentifier conversionTargetId="matlab.XMatlabElementIdentifier" marshaller="emf"><![CDATA[<XMatlab:XMatlabElementIdentifier xmlns:XMatlab="platform:/resource/com.modelengineers.mxam.tooladapter.matlab/models/domain/matlab/7.1.0" artifactName="MXAM_Test" elementIdentifier="MXAM_Test/DiscreteTimeIntegrator/Subsystem/DiscreteTimeIntegrator/ForwardEulerIntegration/Gain,&#10;Gain,&#10;block,&#10;&lt;Id not set&gt;: Consider specifying min/max values for the block &quot;Gain&quot; but only in case they are known in advance and the user can guarantee that they will never be exceeded." name="Gain" path="MXAM_Test/DiscreteTimeIntegrator/Subsystem/DiscreteTimeIntegrator/ForwardEulerIntegration/Gain" qualifier="block" sid="" version="5.1.0.xMessage">
+    <message messageId="&lt;Id not set&gt;" messageText="Consider specifying min/max values for the block &quot;Gain&quot; but only in case they are known in advance and the user can guarantee that they will never be exceeded."/>
+</XMatlab:XMatlabElementIdentifier>
+]]></xElementIdentifier>
+        <from>Review</from>
+        <to></to>
+      </mapping>
+      <finding>
+        <artifact>MXAM_Test</artifact>
+        <name>Gain</name>
+        <path>MXAM_Test/DiscreteTimeIntegrator/Subsystem/DiscreteTimeIntegrator/ForwardEulerIntegration/Gain</path>
+        <checkId>mcheck_mes_cgtl_4203</checkId>
+        <message><![CDATA[Consider specifying min/max values for the block &quot;Gain&quot; but only in case they are known in advance and the user can guarantee that they will never be exceeded.]]></message>
+        <messageId><![CDATA[&lt;Id not set&gt;]]></messageId>
+        <qualifier>block</qualifier>
+        <result>REVIEW</result>
+      </finding>
+    </annotation>
+    <annotation id="Report Annotation 5_01/21/2022 12:45:08" adapterId="com.modelengineers.mxam.tooladapter.matlab">
+      <author username="MBSD.SDK" domain="MBSD-SDK-Shared"/>
+      <date>01/21/2022 12:45:08</date>
+      <modifiedDate>01/21/2022 12:45:14</modifiedDate>
+      <comment>Minimum or maximum values are not available.</comment>
+      <checks>
+        <check>dspace_tl_5_1/General Guidelines for Simulink, Stateflow, and TargetLink/Fixed-Point Code Generation/TL_ADV_OPTI_CONSTRAINTS/mcheck_mes_cgtl_4203</check>
+      </checks>
+      <mappedProject>MBSD.SDK Blockset GuideLines</mappedProject>
+      <mapping>
+        <xElementIdentifier conversionTargetId="matlab.XMatlabElementIdentifier" marshaller="emf"><![CDATA[<XMatlab:XMatlabElementIdentifier xmlns:XMatlab="platform:/resource/com.modelengineers.mxam.tooladapter.matlab/models/domain/matlab/7.1.0" artifactName="MXAM_Test" elementIdentifier="MXAM_Test/DiscreteTimeIntegrator/Subsystem/DiscreteTimeIntegrator/ForwardEulerIntegration/Sum,&#10;Sum,&#10;block,&#10;&lt;Id not set&gt;: Consider specifying min/max values for the block &quot;Sum&quot; but only in case they are known in advance and the user can guarantee that they will never be exceeded." name="Sum" path="MXAM_Test/DiscreteTimeIntegrator/Subsystem/DiscreteTimeIntegrator/ForwardEulerIntegration/Sum" qualifier="block" sid="" version="5.1.0.xMessage">
+    <message messageId="&lt;Id not set&gt;" messageText="Consider specifying min/max values for the block &quot;Sum&quot; but only in case they are known in advance and the user can guarantee that they will never be exceeded."/>
+</XMatlab:XMatlabElementIdentifier>
+]]></xElementIdentifier>
+        <from>Review</from>
+        <to></to>
+      </mapping>
+      <finding>
+        <artifact>MXAM_Test</artifact>
+        <name>Sum</name>
+        <path>MXAM_Test/DiscreteTimeIntegrator/Subsystem/DiscreteTimeIntegrator/ForwardEulerIntegration/Sum</path>
+        <checkId>mcheck_mes_cgtl_4203</checkId>
+        <message><![CDATA[Consider specifying min/max values for the block &quot;Sum&quot; but only in case they are known in advance and the user can guarantee that they will never be exceeded.]]></message>
+        <messageId><![CDATA[&lt;Id not set&gt;]]></messageId>
+        <qualifier>block</qualifier>
+        <result>REVIEW</result>
+      </finding>
+    </annotation>
+    <annotation id="Report Annotation 6_01/21/2022 12:45:18" adapterId="com.modelengineers.mxam.tooladapter.matlab">
+      <author username="MBSD.SDK" domain="MBSD-SDK-Shared"/>
+      <date>01/21/2022 12:45:18</date>
+      <modifiedDate>01/21/2022 12:45:22</modifiedDate>
+      <comment>Minimum or maximum values are not available.</comment>
+      <checks>
+        <check>dspace_tl_5_1/General Guidelines for Simulink, Stateflow, and TargetLink/Fixed-Point Code Generation/TL_ADV_OPTI_CONSTRAINTS/mcheck_mes_cgtl_4203</check>
+      </checks>
+      <mappedProject>MBSD.SDK Blockset GuideLines</mappedProject>
+      <mapping>
+        <xElementIdentifier conversionTargetId="matlab.XMatlabElementIdentifier" marshaller="emf"><![CDATA[<XMatlab:XMatlabElementIdentifier xmlns:XMatlab="platform:/resource/com.modelengineers.mxam.tooladapter.matlab/models/domain/matlab/7.1.0" artifactName="MXAM_Test" elementIdentifier="MXAM_Test/DiscreteTimeIntegrator/Subsystem/DiscreteTimeIntegrator/ForwardEulerIntegration/UnitDelay,&#10;UnitDelay,&#10;block,&#10;&lt;Id not set&gt;: Consider specifying min/max values for the block &quot;UnitDelay&quot; but only in case they are known in advance and the user can guarantee that they will never be exceeded." name="UnitDelay" path="MXAM_Test/DiscreteTimeIntegrator/Subsystem/DiscreteTimeIntegrator/ForwardEulerIntegration/UnitDelay" qualifier="block" sid="" version="5.1.0.xMessage">
+    <message messageId="&lt;Id not set&gt;" messageText="Consider specifying min/max values for the block &quot;UnitDelay&quot; but only in case they are known in advance and the user can guarantee that they will never be exceeded."/>
+</XMatlab:XMatlabElementIdentifier>
+]]></xElementIdentifier>
+        <from>Review</from>
+        <to></to>
+      </mapping>
+      <finding>
+        <artifact>MXAM_Test</artifact>
+        <name>UnitDelay</name>
+        <path>MXAM_Test/DiscreteTimeIntegrator/Subsystem/DiscreteTimeIntegrator/ForwardEulerIntegration/UnitDelay</path>
+        <checkId>mcheck_mes_cgtl_4203</checkId>
+        <message><![CDATA[Consider specifying min/max values for the block &quot;UnitDelay&quot; but only in case they are known in advance and the user can guarantee that they will never be exceeded.]]></message>
+        <messageId><![CDATA[&lt;Id not set&gt;]]></messageId>
+        <qualifier>block</qualifier>
+        <result>REVIEW</result>
+      </finding>
+    </annotation>
+    <annotation id="Report Annotation 7_01/21/2022 12:45:28" adapterId="com.modelengineers.mxam.tooladapter.matlab">
+      <author username="MBSD.SDK" domain="MBSD-SDK-Shared"/>
+      <date>01/21/2022 12:45:28</date>
+      <modifiedDate>01/21/2022 12:45:33</modifiedDate>
+      <comment>Minimum or maximum values are not available.</comment>
+      <checks>
+        <check>dspace_tl_5_1/General Guidelines for Simulink, Stateflow, and TargetLink/Fixed-Point Code Generation/TL_ADV_OPTI_CONSTRAINTS/mcheck_mes_cgtl_4203</check>
+      </checks>
+      <mappedProject>MBSD.SDK Blockset GuideLines</mappedProject>
+      <mapping>
+        <xElementIdentifier conversionTargetId="matlab.XMatlabElementIdentifier" marshaller="emf"><![CDATA[<XMatlab:XMatlabElementIdentifier xmlns:XMatlab="platform:/resource/com.modelengineers.mxam.tooladapter.matlab/models/domain/matlab/7.1.0" artifactName="MXAM_Test" elementIdentifier="MXAM_Test/DiscreteTimeIntegrator/Subsystem/DiscreteTimeIntegrator/OutPort,&#10;OutPort,&#10;block,&#10;&lt;Id not set&gt;: Consider specifying min/max values for the block &quot;OutPort&quot; but only in case they are known in advance and the user can guarantee that they will never be exceeded." name="OutPort" path="MXAM_Test/DiscreteTimeIntegrator/Subsystem/DiscreteTimeIntegrator/OutPort" qualifier="block" sid="" version="5.1.0.xMessage">
+    <message messageId="&lt;Id not set&gt;" messageText="Consider specifying min/max values for the block &quot;OutPort&quot; but only in case they are known in advance and the user can guarantee that they will never be exceeded."/>
+</XMatlab:XMatlabElementIdentifier>
+]]></xElementIdentifier>
+        <from>Review</from>
+        <to></to>
+      </mapping>
+      <finding>
+        <artifact>MXAM_Test</artifact>
+        <name>OutPort</name>
+        <path>MXAM_Test/DiscreteTimeIntegrator/Subsystem/DiscreteTimeIntegrator/OutPort</path>
+        <checkId>mcheck_mes_cgtl_4203</checkId>
+        <message><![CDATA[Consider specifying min/max values for the block &quot;OutPort&quot; but only in case they are known in advance and the user can guarantee that they will never be exceeded.]]></message>
+        <messageId><![CDATA[&lt;Id not set&gt;]]></messageId>
+        <qualifier>block</qualifier>
+        <result>REVIEW</result>
+      </finding>
+    </annotation>
+  </annotations>
+</annotationDefinition>

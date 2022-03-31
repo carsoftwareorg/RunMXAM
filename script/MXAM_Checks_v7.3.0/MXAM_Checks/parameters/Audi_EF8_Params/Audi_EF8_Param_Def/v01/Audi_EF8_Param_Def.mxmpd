@@ -1,0 +1,15 @@
+<parameterDefinition fileVersion="1">
+  <uid>c77a60ab-149d-4226-ba21-101bb7bfc573</uid>
+  <id>Audi_EF8_Param_Def</id>
+  <version>1</version>
+  <title>Parameters for Audi EF-8 Checks</title>
+  <author username="TGULSAN" domain="DEAUDI00"/>
+  <copyright></copyright>
+  <parameterSpecifications>
+    <specification type="string">
+      <name>Volkswagen.Modellteile.GlobalZulaessigeBloecke</name>
+      <description>Each entry is a blocktype of a block, that is allowed on every level of the model.</description>
+      <defaultValue><![CDATA[{'Inport','Outport','EnablePort','TriggerPort','Ground','Terminator','Mux','Demux','BusCreator','BusSelector','Merge','From','Goto','Switch','MultiPortSwitch','Constant','UnitDelay'}]]></defaultValue>
+    </specification>
+  </parameterSpecifications>
+</parameterDefinition>

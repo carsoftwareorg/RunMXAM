@@ -1,0 +1,35 @@
+<ignoreListDefinition uid="89d11af3-2256-459b-a329-f96da171d754" title="MATLAB Ignore-list">
+	<managers>
+		<manager username="Dr. Zeki Fedai" domain="Audi EF-8"/>
+	</managers>
+	<ignoreList>
+		<ignore target="com.modelengineers.mxam.tooladapter.matlab">
+			<comment>Ignore subsystem for all checks.</comment>
+			<elements>
+				<element type="PATH">
+					<comment>Ignore all elements below subsystem engine gas dynamics.</comment>
+					<value>fuelsys/engine gas dynamics*</value>
+				</element>
+			</elements>
+		</ignore>
+		<ignore target="com.modelengineers.mxam.tooladapter.matlab">
+			<comment>GotoTagVisibility</comment>
+			<elements>
+				<element type="BLOCKTYPE">
+					<comment>Ignore all GotoTagVisibility blocks. The value of the block type has  
+          to be defined by the MATLAB BlockType attribute.</comment>
+					<value>GotoTagVisibility</value>
+				</element>
+				<element type="MASKTYPE">
+					<comment>Ignore all blocks with the mask type prefix TL_. The value of the   
+          block type has to be defined by the MATLAB MaskType attribute. 
+          </comment>
+					<value>TL213_*</value>
+				</element>
+			</elements>
+			<checks>
+				<check refID="jc_0061.mcheck_jc_0061"/>
+			</checks>
+		</ignore>
+	</ignoreList>
+</ignoreListDefinition>

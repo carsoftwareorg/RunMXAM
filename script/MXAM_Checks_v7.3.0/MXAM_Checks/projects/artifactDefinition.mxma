@@ -1,0 +1,14 @@
+<artefactDefinition uid="cd06b323-1b22-4047-a039-915bfe82f6e6" id="Default_ID" title="artifactDefinition.mxma">
+  <ignoreListDefinitionPaths/>
+  <artefacts>
+    <artefact>
+      <adapterId>com.modelengineers.mxam.tooladapter.matlab</adapterId>
+      <storageNature>Tool artifact</storageNature>
+      <selected>true</selected>
+      <modelname>Current model</modelname>
+      <modeltype>MOD</modeltype>
+      <dynamic>MOD</dynamic>
+      <modelpath></modelpath>
+    </artefact>
+  </artefacts>
+</artefactDefinition>

@@ -1,0 +1,173 @@
+<guideline fileVersion="2">
+  <uid>dc395811-7254-4607-8867-26405c74d452</uid>
+  <id>EF8_mr07</id>
+  <version>5</version>
+  <status>released</status>
+  <preVersionUid></preVersionUid>
+  <author username="TGULSAN" domain="DEAUDI00" email="extern.sanat.gulvadi@audi.de"/>
+  <coAuthors>
+    <coAuthor username="FEAA9I4" domain="DEAUDI00"/>
+    <coAuthor username="FEDAIZE" domain="DEAUDI00"/>
+    <coAuthor username="AZDZARE" domain="DEAUDI00"/>
+  </coAuthors>
+  <copyright></copyright>
+  <reviewers/>
+  <templateUid>87c1ed92-ff48-43b6-97e8-66b83cb40265</templateUid>
+  <title>Usage of Division Block</title>
+  <properties>
+    <enumeration name="Priority" optional="false" private="false" multi="false">
+      <description>The priority for this guideline.</description>
+      <enums>
+        <value>strongly recommended</value>
+      </enums>
+    </enumeration>
+    <string name="Scope" optional="true" private="false">
+      <description>Project specific scope.</description>
+      <value>Code generation</value>
+    </string>
+    <enumeration name="Objective" optional="false" private="false" multi="true">
+      <description>This is the rational for this guideline.</description>
+      <enums>
+        <value>code generation</value>
+      </enums>
+    </enumeration>
+    <string name="Source" optional="true" private="false">
+      <description>Document and chapter this guideline is originally taken from.</description>
+      <value></value>
+    </string>
+    <string name="Reference" optional="true" private="false">
+      <description>Reference(s) to other documents.</description>
+      <value></value>
+    </string>
+    <string name="MATLAB Versions" optional="true" private="false">
+      <description>Related MATLAB versions.</description>
+      <value>all</value>
+    </string>
+    <string name="TargetLink Versions" optional="true" private="false">
+      <description>Related TargetLink versions</description>
+      <value>all</value>
+    </string>
+    <string name="Embedded Coder Versions" optional="true" private="false">
+      <description>Related Embedded Coder versions</description>
+      <value>irrelevant</value>
+    </string>
+    <enumeration name="Automatically Checkable" optional="false" private="false" multi="false">
+      <description>To what extent is the guideline automatically checkable?</description>
+      <enums>
+        <value>partly</value>
+      </enums>
+    </enumeration>
+    <enumeration name="Manual Review Required" optional="false" private="false" multi="false">
+      <description>Is a manual review of this guideline required?</description>
+      <enums>
+        <value>yes</value>
+      </enums>
+    </enumeration>
+    <richtext name="Summary" optional="false" private="true">
+      <description>Short summary of the guideline.</description>
+      <value><![CDATA[Usage of TargetLink product blocks for division
+<br />]]></value>
+    </richtext>
+    <richtext name="Description" optional="false" private="false">
+      <description>Text describing the guideline in more detail.</description>
+      <value><![CDATA[<span style="TEXT-DECORATION: underline">Floating point projects:</span>
+<br /> 
+<ul> 
+ <li> A TargetLink product block may be used for a division, if at the divisor input, a parameter constant is used, the properties of which preclude the occurrence of a division by zero </li> 
+ <li> The &quot;Protect against division by zero&quot; flag should <strong>not</strong> be set </li> 
+</ul>
+<span style="TEXT-DECORATION: underline">Fixed point projects:</span>
+<br /> 
+<ul> 
+ <li> In the case of the usage of TargetLink product block, the &quot;Protect against division by zero&quot; flag&nbsp;<span style="TEXT-DECORATION: underline; FONT-WEIGHT: bold">MUST</span> be set. </li> 
+</ul>]]></value>
+    </richtext>
+    <richtext name="Rationale" optional="false" private="false">
+      <description>Detailed explaination of the intention of this guideline.</description>
+      <value><![CDATA[<p> To find as soon as possible division by zero problems. Could not replace static code analysis. </p>]]></value>
+    </richtext>
+    <richtext name="Example" optional="true" private="false">
+      <description>Example describing the intention of this guideline.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Counter Example" optional="true" private="false">
+      <description>Counter example describing the intention of this guideline.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Review Measures" optional="true" private="false">
+      <description>A checklist of what is to be done to manually review this guideline.</description>
+      <value></value>
+    </richtext>
+    <string name="Related Guidelines" optional="true" private="false">
+      <description>Reference to other guidelines and explaination of the relationships.</description>
+      <value></value>
+    </string>
+    <enumeration name="Model Type" optional="false" private="false" multi="true">
+      <description>The type of the model that should conform to the guideline.</description>
+      <enums>
+        <value>functional model</value>
+      </enums>
+    </enumeration>
+    <enumeration name="ISO 26262-6 Classification" optional="true" private="true" multi="true">
+      <description>The guideline is associated with ISO 26262-6 categories as described in table 1 (T1) and table 8 (T8).</description>
+      <enums/>
+    </enumeration>
+    <string name="Last Change" optional="true" private="false">
+      <description>In which version of the source guideline document was the guideline changed at last.</description>
+      <value></value>
+    </string>
+  </properties>
+  <checkReferences>
+    <reference refUid="656967ed-0b93-4525-a38f-2088ad2ceb7f" refId="mcheck_EF8_mr07" refTitle="Avoid divison by zero" refVersion="4"/>
+  </checkReferences>
+  <parameterSettings>
+    <check/>
+  </parameterSettings>
+  <history>
+    <record timestamp="08/07/2015 13:03:04">
+      <author username="TGULSAN" domain="DEAUDI00" email="extern.sanat.gulvadi@audi.de"/>
+      <comment>Guideline created.</comment>
+    </record>
+    <record timestamp="05/16/2017 08:41:30">
+      <author username="FedaiZe" domain="DEAUDI00"/>
+      <comment><![CDATA[Für Floating Projekte entfällt die Überprüfung 'The option ''Protect against division by zero in production code'' must NOT be selected.
+]]></comment>
+    </record>
+    <record timestamp="07/22/2019 16:56:11">
+      <author username="AZDZARE" domain="DEAUDI00"/>
+      <comment>Status changed from [DRAFT] to [RELEASED]. </comment>
+    </record>
+    <record timestamp="07/22/2019 17:01:44">
+      <author username="AZDZARE" domain="DEAUDI00"/>
+      <comment>A new version [2] of [EF8_mr07: Usage of Division Block (v01)] has been created.</comment>
+    </record>
+    <record timestamp="08/05/2019 15:49:03">
+      <author username="FEAA9I4" domain="DEAUDI00"/>
+      <comment>Status changed from [DRAFT] to [RELEASED]. </comment>
+    </record>
+    <record timestamp="12/13/2019 13:53:03">
+      <author username="FEAA9I4" domain="DEAUDI00"/>
+      <comment>A new version [3] of [EF8_mr07: Usage of Division Block (v02)] has been created.</comment>
+    </record>
+    <record timestamp="12/13/2019 13:53:31">
+      <author username="FEAA9I4" domain="DEAUDI00"/>
+      <comment>Status changed from [DRAFT] to [RELEASED]. MXAM 5.0 Checkset 5.2</comment>
+    </record>
+    <record timestamp="06/10/2020 12:56:25">
+      <author username="FEAA9I4" domain="DEAUDI00"/>
+      <comment>A new version [4] of [EF8_mr07: Usage of Division Block (v03)] has been created.</comment>
+    </record>
+    <record timestamp="10/15/2020 17:49:49">
+      <author username="FEAA9I4" domain="DEAUDI00"/>
+      <comment>Status changed from [DRAFT] to [RELEASED]. </comment>
+    </record>
+    <record timestamp="03/02/2021 13:50:34">
+      <author username="FEAA9I4" domain="DEAUDI00"/>
+      <comment>A new version [5] of [EF8_mr07: Usage of Division Block (v04)] has been created.</comment>
+    </record>
+    <record timestamp="03/22/2021 08:32:50">
+      <author username="FEAA9I4" domain="DEAUDI00"/>
+      <comment>Status changed from [DRAFT] to [RELEASED]. </comment>
+    </record>
+  </history>
+</guideline>

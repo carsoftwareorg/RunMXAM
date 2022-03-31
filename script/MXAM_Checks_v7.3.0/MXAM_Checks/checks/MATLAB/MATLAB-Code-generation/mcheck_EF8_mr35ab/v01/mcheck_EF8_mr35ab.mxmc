@@ -1,0 +1,56 @@
+<check fileVersion="2">
+  <uid>06cd0bb9-d1b4-4794-b889-54723672e98f</uid>
+  <id>mcheck_EF8_mr35ab</id>
+  <version>1</version>
+  <status>released</status>
+  <preVersionUid></preVersionUid>
+  <author username="FEAA9I4" domain="DEAUDI00"/>
+  <coAuthors/>
+  <copyright></copyright>
+  <reviewers/>
+  <templateUid>9b892ac0-cdd6-48f6-96ee-253934e2ed81</templateUid>
+  <title>Consistent default data type in DD</title>
+  <adapter version="2.3">com.modelengineers.mxam.tooladapter.matlab</adapter>
+  <executable>mes_EF8_mr35ab.m</executable>
+  <repairOption>false</repairOption>
+  <timeConsuming>false</timeConsuming>
+  <properties>
+    <richtext name="Description" optional="false" private="false">
+      <description>Detailed description of this check</description>
+      <value><![CDATA[<p class="MsoNormal"> <span lang="EN-US" style="FONT-SIZE: 12pt; FONT-FAMILY: &quot;Times New Roman&quot;,serif; mso-ansi-language: EN-US; mso-fareast-language: DE">The two data type used are 'Int16' for fixed point projects and 'Float32' for floating point projects.</span> </p>]]></value>
+    </richtext>
+    <richtext name="Pass-Fail Criteria" optional="false" private="false">
+      <description>This is a detailed description of the pass and fail criteria.</description>
+      <value><![CDATA[<span lang="EN-US" style="FONT-SIZE: 12pt; FONT-FAMILY: &quot;Times New Roman&quot;,serif; mso-ansi-language: EN-US; mso-fareast-language: DE">Pass if the field DefaultDataType in the DD is 'Int16' (in case of Fixpointprojects) and 'Float32' (in case of Floatingpointprojects). Otherwise the test fails.</span>]]></value>
+    </richtext>
+    <richtext name="Solution" optional="false" private="false">
+      <description>A solution for the user to repair faulty elements.</description>
+      <value><![CDATA[<span lang="EN-US" style="FONT-SIZE: 12pt; FONT-FAMILY: &quot;Times New Roman&quot;,serif; mso-ansi-language: EN-US; mso-fareast-language: DE">Change the default data type to 'Int16' or 'Float32'. You can change the data type as described in the repair action.</span>]]></value>
+    </richtext>
+    <richtext name="Repair Action" optional="true" private="false">
+      <description>How the check automatically repairs faulty elements.</description>
+      <value><![CDATA[<span lang="EN-US" style="FONT-SIZE: 12pt; FONT-FAMILY: &quot;Times New Roman&quot;,serif; mso-ansi-language: EN-US; mso-fareast-language: DE">Execute<br /> <br /> ddid = dsdd('Get', 'Config/TargetLink');<br /> dsdd('Set', ddid, 'DefaultDataType', target_data_type);<br /> <br /> where &lt;target_data_type&gt; is 'Int16'. Or open the DD Manager via &quot;dsddman&quot; and change the value manually.<br /> </span>]]></value>
+    </richtext>
+    <richtext name="Example" optional="true" private="false">
+      <description>Example of how the check works.</description>
+      <value></value>
+    </richtext>
+  </properties>
+  <parameterSpecifications/>
+  <parameterReferences>
+    <parameterReferences sourceType="shared">
+      <parameterName>Audi.IsFloating</parameterName>
+      <sourceIdentifier>4a3ee8ce-11d7-4284-b98c-a0e3b3be942e</sourceIdentifier>
+    </parameterReferences>
+  </parameterReferences>
+  <history>
+    <record timestamp="07/30/2021 10:13:24">
+      <author username="FEAA9I4" domain="DEAUDI00"/>
+      <comment><![CDATA[Copied from 'Consistent default data type in DD' (ID: mcheck_EF8_mr35a, Version: v02, Library: MATLAB-Code-generation, Author: FEAA9I4)]]></comment>
+    </record>
+    <record timestamp="08/17/2021 15:25:40">
+      <author username="FEAA9I4" domain="DEAUDI00"/>
+      <comment>Status changed from [DRAFT] to [RELEASED]. </comment>
+    </record>
+  </history>
+</check>

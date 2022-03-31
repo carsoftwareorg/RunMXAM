@@ -1,0 +1,7 @@
+<library type="CheckLibrary" id="CariadCheckLibrary" title="Cariad library for checks" uid="b35eec6d-b344-4eca-a324-46a868030189">
+  <managers>
+    <manager username="MBSD.SDK" domain="MBSD-SDK-Shared"/>
+  </managers>
+  <authors/>
+  <access>public</access>
+</library>

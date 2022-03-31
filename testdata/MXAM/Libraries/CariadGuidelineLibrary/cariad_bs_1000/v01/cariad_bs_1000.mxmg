@@ -1,0 +1,58 @@
+<guideline fileVersion="2">
+  <uid>23302a13-8366-4a09-a420-48dfce2be867</uid>
+  <id>cariad_bs_1000</id>
+  <version>1</version>
+  <status>draft</status>
+  <preVersionUid></preVersionUid>
+  <author username="MBSD.SDK" domain="MBSD-SDK-Shared"/>
+  <coAuthors/>
+  <copyright>2022 Cariad</copyright>
+  <reviewers/>
+  <templateUid>9a285aeb-498e-4a4e-9e2e-3158177cd083</templateUid>
+  <title>Cariad brand on block icon</title>
+  <properties>
+    <enumeration name="Priority" optional="false" private="false" multi="false">
+      <description>The priority for this guideline.</description>
+      <enums>
+        <value>Mandatory</value>
+      </enums>
+    </enumeration>
+    <enumeration name="Rational" optional="false" private="false" multi="true">
+      <description>This is the rational for this guideline.</description>
+      <enums>
+        <value>-</value>
+      </enums>
+    </enumeration>
+    <enumeration name="Category" optional="false" private="false" multi="true">
+      <description>The category.</description>
+      <enums>
+        <value>Simulink</value>
+      </enums>
+    </enumeration>
+    <string name="MATLAB Version" optional="false" private="false">
+      <description>Applying MATLAB versions</description>
+      <value>all</value>
+    </string>
+    <string name="TargetLink Version" optional="false" private="false">
+      <description>Applying MATLAB versions</description>
+      <value>all</value>
+    </string>
+    <richtext name="Description" optional="false" private="false">
+      <description>This is a detailed description.</description>
+      <value><![CDATA[A block as part of the cariad blockset must display the Cariad logo on its icon.
+<br />]]></value>
+    </richtext>
+  </properties>
+  <checkReferences>
+    <reference refUid="830980ab-9237-41e1-9882-06f189af7db4" refId="mcheck_cariad_bs_1000" refTitle="Cariad brand" refVersion="1"/>
+  </checkReferences>
+  <parameterSettings>
+    <check/>
+  </parameterSettings>
+  <history>
+    <record timestamp="01/25/2022 13:29:48">
+      <author username="MBSD.SDK" domain="MBSD-SDK-Shared"/>
+      <comment>Guideline created.</comment>
+    </record>
+  </history>
+</guideline>

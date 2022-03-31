@@ -1,0 +1,51 @@
+<check fileVersion="2">
+  <uid>b45e4f4c-767c-42a2-a137-50593a246581</uid>
+  <id>mcheck_EF8_mr35c</id>
+  <version>1</version>
+  <status>released</status>
+  <preVersionUid></preVersionUid>
+  <author username="FEAA9I4" domain="DEAUDI00"/>
+  <coAuthors/>
+  <copyright></copyright>
+  <reviewers/>
+  <templateUid>9b892ac0-cdd6-48f6-96ee-253934e2ed81</templateUid>
+  <title>Avoid usage of TLDatatype node</title>
+  <adapter version="2.3">com.modelengineers.mxam.tooladapter.matlab</adapter>
+  <executable>mes_EF8_mr35c.m</executable>
+  <repairOption>false</repairOption>
+  <timeConsuming>false</timeConsuming>
+  <properties>
+    <richtext name="Description" optional="false" private="false">
+      <description>Detailed description of this check</description>
+      <value><![CDATA[<p class="MsoNormal"> <span lang="EN-US" style="FONT-SIZE: 12pt; FONT-FAMILY: &quot;Times New Roman&quot;,serif; mso-ansi-language: EN-US; mso-fareast-language: DE">In HCP1 projects it is recommended to use the official released datatypes. Please check if the usage of the datatype from TLDatatypes is necessary</span> </p>]]></value>
+    </richtext>
+    <richtext name="Pass-Fail Criteria" optional="false" private="false">
+      <description>This is a detailed description of the pass and fail criteria.</description>
+      <value><![CDATA[<span lang="EN-US" style="FONT-SIZE: 12pt; FONT-FAMILY: &quot;Times New Roman&quot;,serif; mso-ansi-language: EN-US; mso-fareast-language: DE">Pass if the any TargetLink block did not use&nbsp;a datatype&nbsp;out of the node&nbsp;TLDatatype. Otherwise: warning.</span>]]></value>
+    </richtext>
+    <richtext name="Solution" optional="false" private="false">
+      <description>A solution for the user to repair faulty elements.</description>
+      <value><![CDATA[<p> <font size="3" face="Times New Roman">Use an officially released datatype.</font> </p>]]></value>
+    </richtext>
+    <richtext name="Repair Action" optional="true" private="false">
+      <description>How the check automatically repairs faulty elements.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Example" optional="true" private="false">
+      <description>Example of how the check works.</description>
+      <value></value>
+    </richtext>
+  </properties>
+  <parameterSpecifications/>
+  <parameterReferences/>
+  <history>
+    <record timestamp="07/30/2021 10:13:34">
+      <author username="FEAA9I4" domain="DEAUDI00"/>
+      <comment><![CDATA[Copied from 'Avoid usage of TLDatatype node' (ID: mcheck_EF8_mr35b, Version: v03, Library: MATLAB-Code-generation, Author: FEAA9I4)]]></comment>
+    </record>
+    <record timestamp="08/17/2021 15:25:58">
+      <author username="FEAA9I4" domain="DEAUDI00"/>
+      <comment>Status changed from [DRAFT] to [RELEASED]. </comment>
+    </record>
+  </history>
+</check>

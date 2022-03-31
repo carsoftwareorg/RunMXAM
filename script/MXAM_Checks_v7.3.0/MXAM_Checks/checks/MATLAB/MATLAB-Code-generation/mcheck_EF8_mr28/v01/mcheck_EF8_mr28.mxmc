@@ -1,0 +1,113 @@
+<check fileVersion="2">
+  <uid>68a8204b-dc3f-44ad-a89f-74566674d50c</uid>
+  <id>mcheck_EF8_mr28</id>
+  <version>1</version>
+  <status>released</status>
+  <preVersionUid></preVersionUid>
+  <author username="TGULSAN" domain="DEAUDI00"/>
+  <coAuthors>
+    <coAuthor username="FEAA9I4" domain="DEAUDI00"/>
+    <coAuthor username="FEDAIZE" domain="DEAUDI00"/>
+  </coAuthors>
+  <copyright></copyright>
+  <reviewers/>
+  <templateUid>206e6a94-528a-7a2a-a982-901a9fd65b09</templateUid>
+  <title>Datatype plausibility on the basis of name of signal or parameter</title>
+  <adapter version="2.3">com.modelengineers.mxam.tooladapter.matlab</adapter>
+  <executable>mes_EF8_mr28.m</executable>
+  <repairOption>false</repairOption>
+  <timeConsuming>false</timeConsuming>
+  <properties>
+    <enumeration name="Compiled Model Required" optional="false" private="false" multi="false">
+      <description>Indicates whether the check needs a compiled model.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <enumeration name="TargetLink Required" optional="false" private="false" multi="false">
+      <description>Indicates whether this check requires a TargetLink installation or not.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <enumeration name="Model Root Required" optional="false" private="false" multi="false">
+      <description>Indicates whether this check analyses up from the model root.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <string name="MATLAB Versions" optional="true" private="false">
+      <description>Related MATLAB versions</description>
+      <value></value>
+    </string>
+    <string name="TargetLink Versions" optional="true" private="false">
+      <description>Related TargetLink versions</description>
+      <value></value>
+    </string>
+    <string name="Embedded Coder Versions" optional="true" private="false">
+      <description>Related Embedded Coder versions</description>
+      <value></value>
+    </string>
+    <richtext name="Pass-Fail Criteria" optional="false" private="false">
+      <description>This is a detailed description of the pass and fail criteria.</description>
+      <value><![CDATA[Passed :
+<br /> The names of signals or parameters that have the following type identifier and prefix have an appropriate data type given by the following :
+<br /> 
+<table style="width: 1402px; height: 89px;" summary="Plausibility based on prefix" title="" border="1" cellpadding="2" cellspacing="0"> 
+ <tbody> 
+  <tr> 
+   <th abbr="" id="" scope="col"> Prefix ID<br /> </th> 
+   <th abbr="" id="" scope="col"> Data type<br /> </th> 
+  </tr> 
+  <tr> 
+   <td> _S_flg , _M_flg </td> 
+   <td> Boolean </td> 
+  </tr> 
+  <tr> 
+   <td> _S_idx, _M_idx </td> 
+   <td> signed or unsigned integer </td> 
+  </tr> 
+  <tr> 
+   <td style="vertical-align: top;"> _S_ctr, _M_ctr, _S_sti, _M_sti </td> 
+   <td style="vertical-align: top;"> unsigned integer<br /> </td> 
+  </tr> 
+ </tbody> 
+</table>
+<br />]]></value>
+    </richtext>
+    <richtext name="Technical Notes" optional="true" private="false">
+      <description>Important notes concerning the implementation of the check.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Solution" optional="false" private="false">
+      <description>A solution for the user to repair faulty elements.</description>
+      <value><![CDATA[Use the correct prefix ID- data type
+<br />]]></value>
+    </richtext>
+    <richtext name="Repair Action" optional="false" private="false">
+      <description>How the check automatically repairs faulty elements.</description>
+      <value><![CDATA[None
+<br />]]></value>
+    </richtext>
+    <richtext name="Example" optional="true" private="false">
+      <description>Example of how the check functions.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Prerequisites" optional="true" private="false">
+      <description>Prerequisites of the model for the check to function properly.</description>
+      <value></value>
+    </richtext>
+  </properties>
+  <parameterSpecifications/>
+  <parameterReferences/>
+  <history>
+    <record timestamp="06/28/2016 14:28:46">
+      <author username="TGULSAN" domain="DEAUDI00"/>
+      <comment><![CDATA[Copied from 'Inputs to a merge block' (ID: mcheck_EF8_mr27, Version: v01, Library: MATLAB-Code-generation, Author: TGULSAN)]]></comment>
+    </record>
+    <record timestamp="08/05/2019 16:30:44">
+      <author username="FEAA9I4" domain="DEAUDI00"/>
+      <comment>Status changed from [DRAFT] to [RELEASED]. </comment>
+    </record>
+  </history>
+</check>

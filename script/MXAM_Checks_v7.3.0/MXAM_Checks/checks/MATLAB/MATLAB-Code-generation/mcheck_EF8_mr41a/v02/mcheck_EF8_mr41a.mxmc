@@ -1,0 +1,86 @@
+<check fileVersion="2">
+  <uid>3f1631b1-0e4c-45ef-9496-0653d123b677</uid>
+  <id>mcheck_EF8_mr41a</id>
+  <version>2</version>
+  <status>released</status>
+  <preVersionUid></preVersionUid>
+  <author username="S5HPURS" domain="DEAUDI00"/>
+  <coAuthors>
+    <coAuthor username="FEAA9I4" domain="DEAUDI00"/>
+  </coAuthors>
+  <copyright></copyright>
+  <reviewers/>
+  <templateUid>206e6a94-528a-4a1d-a982-901a9fd65b09</templateUid>
+  <title>Functional usage of all TargetLink-Inports</title>
+  <adapter version="2.3">com.modelengineers.mxam.tooladapter.matlab</adapter>
+  <executable>mes_EF8_mr41a.m</executable>
+  <repairOption>false</repairOption>
+  <timeConsuming>false</timeConsuming>
+  <properties>
+    <enumeration name="Compiled Model Required" optional="false" private="false" multi="false">
+      <description>Indicates whether the check needs a compiled model.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <enumeration name="TargetLink Required" optional="false" private="false" multi="false">
+      <description>Indicates whether this check reuires a TargetLink installation or not.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <enumeration name="Model Root Required" optional="false" private="false" multi="false">
+      <description>Indicates whether this check analyses up from the model root.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <richtext name="Pass-Fail Criteria" optional="false" private="false">
+      <description>This is a detailed description of the pass and fail criteria.</description>
+      <value><![CDATA[<p> Only executed at modul-level. Executing on SWC-level returns an info note. </p> 
+<p> ERROR: The inported signal is not used productively. </p> 
+<p> Warning: TheInported signal could not be verified for productiveness </p> 
+<p> Productivness is checked by an Index of Blocks:<br /> 'TL_Abs',...<br /> 'TL_ArithShift',...<br /> 'TL_Assignment',...<br /> 'TL_BitClear',...<br /> 'TL_BitSet',...<br /> 'TL_BitwiseOperator',...<br /> 'TL_CounterAlarm',...<br /> 'TL_CustomCode',...<br /> 'TL_Delay',...<br /> 'TL_DFlipFlop',...<br /> 'TL_DiscreteFilter',...<br /> 'TL_DiscreteStateSpace',...<br /> 'TL_DiscreteIntegrator',...<br /> 'TL_DiscreteTransferFcn',...<br /> 'TL_DLatch',...<br /> 'TL_ExtractBits',...<br /> 'TL_Fcn',...<br /> 'TL_FIRFilter',...<br /> 'TL_Gain',...<br /> 'TL_Interpolation_n-D',...<br /> 'TL_JKFlipFlop',...<br /> 'TL_LogicalOperator',...<br /> 'TL_Lookup1D',...<br /> 'TL_Lookup2D',...<br /> 'TL_LookupNDDirect',...<br /> 'TL_Math',...<br /> 'TL_Merge',...<br /> 'TL_MinMax',...<br /> 'TL_MultiPortSwitch',...<br /> 'TL_Outport',...<br /> 'TL_PreLookup',...<br /> 'TL_PreProcessorIf',...<br /> 'TL_Product',...<br /> 'TL_RateLimiter',...<br /> 'TL_ReceiverComSpec',...<br /> 'TL_RelationalOperator',...<br /> 'TL_Relay',...<br /> 'TL_Saturate',...<br /> 'TL_SenderComSpec',...<br /> 'TL_Signum',...<br /> 'TL_SignalConversion',...<br /> 'TL_Sink',...<br /> 'TL_Sqrt',...<br /> 'TL_SRFlipFlop',...<br /> 'TL_Sum',...<br /> 'TL_Switch',...<br /> 'TL_Trigonometry',...<br /> 'TL_UnitDelay',...<br /> 'TL_UnitDelayRE',...<br /> <br /> 'Stateflow',...<br /> 'EMLIB_DIV',...<br /> 'AEV_ProtectedDivision',...<br /> 'AEV_SymmetricSaturation',...<br /> 'AEV_Saturation'...<br /> <br /> 'If',...<br /> 'SwitchCase',...<br /> 'WhileIterator' </p> 
+<p> Variant Subsystem </p>]]></value>
+    </richtext>
+    <richtext name="Technical Notes" optional="true" private="false">
+      <description>Important notes concerning the implementation of the check.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Solution" optional="false" private="false">
+      <description>A solution for the user to repair faulty elements.</description>
+      <value><![CDATA[Remove the not&nbsp;productive used inport.]]></value>
+    </richtext>
+    <richtext name="Repair Action" optional="false" private="false">
+      <description>How the check automatically repairs faulty elements.</description>
+      <value><![CDATA[<p> - </p>
+<br />]]></value>
+    </richtext>
+    <enumeration name="Analysed Element Type" optional="false" private="false" multi="true">
+      <description>The element types which the checks analyses.</description>
+      <enums>
+        <value>block</value>
+      </enums>
+    </enumeration>
+  </properties>
+  <parameterSpecifications/>
+  <parameterReferences/>
+  <history>
+    <record timestamp="01/25/2021 18:44:25">
+      <author username="S5HPURS" domain="DEAUDI00"/>
+      <comment>Check created.</comment>
+    </record>
+    <record timestamp="03/22/2021 08:26:52">
+      <author username="FEAA9I4" domain="DEAUDI00"/>
+      <comment>Status changed from [DRAFT] to [RELEASED]. </comment>
+    </record>
+    <record timestamp="04/28/2021 15:07:56">
+      <author username="S5HPURS" domain="DEAUDI00" firstname="Arno" lastname="Dietsche" email="extern.Arno.Dietsche@audi.de"/>
+      <comment>A new version [2] of [mcheck_EF8_mr41a: Functional usage of all TargetLink-Inports (v01)] has been created.</comment>
+    </record>
+    <record timestamp="08/17/2021 15:29:47">
+      <author username="FEAA9I4" domain="DEAUDI00"/>
+      <comment>Status changed from [DRAFT] to [RELEASED]. </comment>
+    </record>
+  </history>
+</check>

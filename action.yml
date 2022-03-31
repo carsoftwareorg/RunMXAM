@@ -1,0 +1,21 @@
+name: 'mxam-static-analysis'
+description: 'MXAM Static Analysis github action'
+inputs:
+  mxam_dir: 
+    description: "full path to mxam"
+    required: true
+  artifact: 
+    description: "name of artifact to test"
+    required: true
+  artifact_dir:
+    description: "directory where the artifact is located"
+    required: true
+  checkset:
+    description: "relative path to the checkset from the checkset_dir"
+    required: true
+  checkset_dir: 
+    description: "full path to checkset file"
+    required: true
+runs:
+  using: node12
+  main: dist/index.js

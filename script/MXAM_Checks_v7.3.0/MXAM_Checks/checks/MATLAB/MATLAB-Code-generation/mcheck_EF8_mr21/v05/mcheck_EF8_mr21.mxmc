@@ -1,0 +1,134 @@
+<check fileVersion="2">
+  <uid>d685990a-5e0e-4cd5-9634-ec6e7165d995</uid>
+  <id>mcheck_EF8_mr21</id>
+  <version>5</version>
+  <status>released</status>
+  <preVersionUid></preVersionUid>
+  <author username="TGULSAN" domain="DEAUDI00" email="extern.sanat.gulvadi@audi.de"/>
+  <coAuthors>
+    <coAuthor username="FEAA9I4" domain="DEAUDI00"/>
+    <coAuthor username="FEDAIZE" domain="DEAUDI00"/>
+    <coAuthor username="S5HPURS" domain="DEAUDI00" firstname="Arno" lastname="Dietsche" email="extern.Arno.Dietsche@audi.de"/>
+  </coAuthors>
+  <copyright></copyright>
+  <reviewers/>
+  <templateUid>206e6a94-528a-7a2a-a982-901a9fd65b09</templateUid>
+  <title>Integer rounding method</title>
+  <adapter version="2.3">com.modelengineers.mxam.tooladapter.matlab</adapter>
+  <executable>mes_EF8_mr21.m</executable>
+  <repairOption>true</repairOption>
+  <timeConsuming>false</timeConsuming>
+  <properties>
+    <enumeration name="Compiled Model Required" optional="false" private="false" multi="false">
+      <description>Indicates whether the check needs a compiled model.</description>
+      <enums>
+        <value>yes</value>
+      </enums>
+    </enumeration>
+    <enumeration name="TargetLink Required" optional="false" private="false" multi="false">
+      <description>Indicates whether this check requires a TargetLink installation or not.</description>
+      <enums>
+        <value>yes</value>
+      </enums>
+    </enumeration>
+    <enumeration name="Model Root Required" optional="false" private="false" multi="false">
+      <description>Indicates whether this check analyses up from the model root.</description>
+      <enums>
+        <value>no</value>
+      </enums>
+    </enumeration>
+    <string name="MATLAB Versions" optional="true" private="false">
+      <description>Related MATLAB versions</description>
+      <value>all</value>
+    </string>
+    <string name="TargetLink Versions" optional="true" private="false">
+      <description>Related TargetLink versions</description>
+      <value>all</value>
+    </string>
+    <string name="Embedded Coder Versions" optional="true" private="false">
+      <description>Related Embedded Coder versions</description>
+      <value>irrelevant</value>
+    </string>
+    <richtext name="Pass-Fail Criteria" optional="false" private="false">
+      <description>This is a detailed description of the pass and fail criteria.</description>
+      <value><![CDATA[<p> Error : The integer round method must be set to Zero to avoid deviations in MIL as compared to SIL for a division of integer values. (Only for TL_Product)<br /> Error :&nbsp;The integer round method must be set to Zero to avoid deviations in MIL as compared to SIL for a cast of floating point. (For TL_Rescaler, TL_Gain, TL_Saturate, TL_MinMax, TL_Abs, TL_Sqrt, TL_Switch, TL_MultiPortSwitch)<br /> Error : The integer round method must be set to Floor to avoid deviations in MIL as compared to SIL for a sum or product of fixpoint datatypes. (For TL_Product, TL_Sum) </p>]]></value>
+    </richtext>
+    <richtext name="Technical Notes" optional="true" private="false">
+      <description>Important notes concerning the implementation of the check.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Solution" optional="false" private="false">
+      <description>A solution for the user to repair faulty elements.</description>
+      <value><![CDATA[<p> Change the integer round method to the value specified in the error message (zero or floor) </p>]]></value>
+    </richtext>
+    <richtext name="Repair Action" optional="false" private="false">
+      <description>How the check automatically repairs faulty elements.</description>
+      <value><![CDATA[<p> The setting &quot;RndMeth&quot; will be changed to the correct Rounding Mode </p>]]></value>
+    </richtext>
+    <richtext name="Example" optional="true" private="false">
+      <description>Example of how the check functions.</description>
+      <value></value>
+    </richtext>
+    <richtext name="Prerequisites" optional="true" private="false">
+      <description>Prerequisites of the model for the check to function properly.</description>
+      <value></value>
+    </richtext>
+  </properties>
+  <parameterSpecifications/>
+  <parameterReferences>
+    <parameterReferences sourceType="shared">
+      <parameterName>Audi.RoundingMode</parameterName>
+      <sourceIdentifier>4a3ee8ce-11d7-4284-b98c-a0e3b3be942e</sourceIdentifier>
+    </parameterReferences>
+    <parameterReferences sourceType="shared">
+      <parameterName>Audi.ECU</parameterName>
+      <sourceIdentifier>4a3ee8ce-11d7-4284-b98c-a0e3b3be942e</sourceIdentifier>
+    </parameterReferences>
+  </parameterReferences>
+  <history>
+    <record timestamp="01/12/2016 11:52:43">
+      <author username="TGULSAN" domain="DEAUDI00" email="extern.sanat.gulvadi@audi.de"/>
+      <comment>Check created by MXAM 1 importer.</comment>
+    </record>
+    <record timestamp="10/28/2016 09:56:57">
+      <author username="FedaiZe" domain="DEAUDI00"/>
+      <comment>compile Modell Required und TL-Blockset auf yes gesetzt</comment>
+    </record>
+    <record timestamp="08/05/2019 16:32:18">
+      <author username="FEAA9I4" domain="DEAUDI00"/>
+      <comment>Status changed from [DRAFT] to [RELEASED]. </comment>
+    </record>
+    <record timestamp="08/05/2019 16:36:29">
+      <author username="FEAA9I4" domain="DEAUDI00"/>
+      <comment>A new version [2] of [mcheck_EF8_mr21: Integer round method (v01)] has been created.</comment>
+    </record>
+    <record timestamp="10/14/2019 10:13:37">
+      <author username="FEAA9I4" domain="DEAUDI00"/>
+      <comment>Status changed from [DRAFT] to [RELEASED]. Temporally deactivated</comment>
+    </record>
+    <record timestamp="06/10/2020 12:54:45">
+      <author username="FEAA9I4" domain="DEAUDI00"/>
+      <comment>A new version [3] of [mcheck_EF8_mr21: Integer rounding method (v02)] has been created.</comment>
+    </record>
+    <record timestamp="10/15/2020 16:24:18">
+      <author username="FEAA9I4" domain="DEAUDI00"/>
+      <comment>Status changed from [DRAFT] to [RELEASED]. </comment>
+    </record>
+    <record timestamp="10/15/2020 16:36:42">
+      <author username="FEAA9I4" domain="DEAUDI00"/>
+      <comment>A new version [4] of [mcheck_EF8_mr21: Integer rounding method (v03)] has been created.</comment>
+    </record>
+    <record timestamp="10/15/2020 16:41:21">
+      <author username="FEAA9I4" domain="DEAUDI00"/>
+      <comment>Status changed from [DRAFT] to [RELEASED]. </comment>
+    </record>
+    <record timestamp="09/23/2021 12:26:30">
+      <author username="S5HPURS" domain="DEAUDI00" firstname="Arno" lastname="Dietsche" email="extern.arno.dietsche@audi.de"/>
+      <comment>A new version [5] of [mcheck_EF8_mr21: Integer rounding method (v04)] has been created.</comment>
+    </record>
+    <record timestamp="03/02/2022 16:54:25">
+      <author username="FEAA9I4" domain="DEAUDI00"/>
+      <comment>Status changed from [DRAFT] to [RELEASED]. </comment>
+    </record>
+  </history>
+</check>

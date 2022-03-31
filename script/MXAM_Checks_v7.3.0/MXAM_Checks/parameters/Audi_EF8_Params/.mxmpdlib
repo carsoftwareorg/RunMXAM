@@ -1,0 +1,9 @@
+<library type="ParameterDefinitionLibrary" id="Audi_EF8_Params" title="Audi EF-8 Parameters" uid="392d5064-5237-44e2-94d6-b3393f3bb874">
+  <managers>
+    <manager username="TGULSAN" domain="DEAUDI00"/>
+    <manager username="FEAA9I4" domain="DEAUDI00" firstname="Luca" lastname="Landwehrjohann" email="extern.luca.landwehrjohann@audi.de"/>
+    <manager username="FEDAIZE" domain="DEAUDI00" firstname="Zeki" lastname="Fedai" email="zeki.fedai@audi.de"/>
+  </managers>
+  <authors/>
+  <access>protected</access>
+</library>

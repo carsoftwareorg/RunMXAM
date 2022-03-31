@@ -1,0 +1,58 @@
+<check fileVersion="2">
+  <uid>1b699456-e385-4324-a33e-0af06c71f14f</uid>
+  <id>mcheck_EF8_mr35a</id>
+  <version>1</version>
+  <status>released</status>
+  <preVersionUid></preVersionUid>
+  <author username="FEAA9I4" domain="DEAUDI00"/>
+  <coAuthors>
+    <coAuthor username="AZDZARE" domain="DEAUDI00"/>
+    <coAuthor username="S5HPURS" domain="DEAUDI00" firstname="Arno" lastname="Dietsche" email="extern.Arno.Dietsche@audi.de"/>
+  </coAuthors>
+  <copyright></copyright>
+  <reviewers/>
+  <templateUid>9b892ac0-cdd6-48f6-96ee-253934e2ed81</templateUid>
+  <title>Consistent default data type for fixed point projects</title>
+  <adapter version="2.3">com.modelengineers.mxam.tooladapter.matlab</adapter>
+  <executable>mes_EF8_mr35a.m</executable>
+  <repairOption>false</repairOption>
+  <timeConsuming>false</timeConsuming>
+  <properties>
+    <richtext name="Description" optional="false" private="false">
+      <description>Detailed description of this check</description>
+      <value><![CDATA[<p class="MsoNormal"> <span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif; mso-ansi-language:EN-US;mso-fareast-language:DE" lang="EN-US">The two data type used are 'Int16' for fixed point projects and 'Float32' for floating point projects.</span> </p>]]></value>
+    </richtext>
+    <richtext name="Pass-Fail Criteria" optional="false" private="false">
+      <description>This is a detailed description of the pass and fail criteria.</description>
+      <value><![CDATA[<span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif; mso-ansi-language:EN-US;mso-fareast-language:DE" lang="EN-US">Pass if the field DefaultDataType in the DD is 'Int16'. Otherwise the test fails.</span>]]></value>
+    </richtext>
+    <richtext name="Solution" optional="false" private="false">
+      <description>A solution for the user to repair faulty elements.</description>
+      <value><![CDATA[<span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif; mso-ansi-language:EN-US;mso-fareast-language:DE" lang="EN-US">Change the default data type to 'Int16'. You can change the data type as described in the repair action.</span>]]></value>
+    </richtext>
+    <richtext name="Repair Action" optional="true" private="false">
+      <description>How the check automatically repairs faulty elements.</description>
+      <value><![CDATA[<span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif; mso-ansi-language:EN-US;mso-fareast-language:DE" lang="EN-US">Execute<br /> <br /> ddid = dsdd('Get', 'Config/TargetLink');<br /> dsdd('Set', ddid, 'DefaultDataType', target_data_type);<br /> <br /> where &lt;target_data_type&gt; is 'Int16'. Or open the DD Manager via &quot;dsddman&quot; and change the value manually.<br /> </span>]]></value>
+    </richtext>
+    <richtext name="Example" optional="true" private="false">
+      <description>Example of how the check works.</description>
+      <value></value>
+    </richtext>
+  </properties>
+  <parameterSpecifications/>
+  <parameterReferences/>
+  <history>
+    <record timestamp="10/22/2018 07:31:42">
+      <author username="FEAA9I4" domain="DEAUDI00"/>
+      <comment>Check created.</comment>
+    </record>
+    <record timestamp="10/22/2018 07:37:16">
+      <author username="FEAA9I4" domain="DEAUDI00"/>
+      <comment>Main author is PhD Daniel Jaschke (Username AZDZARE)</comment>
+    </record>
+    <record timestamp="08/05/2019 16:33:39">
+      <author username="FEAA9I4" domain="DEAUDI00"/>
+      <comment>Status changed from [DRAFT] to [RELEASED]. </comment>
+    </record>
+  </history>
+</check>

@@ -1,0 +1,7 @@
+<library type="GuidelineLibrary" id="CariadGuidelineLibrary" title="Cariad library for guidelines" uid="7ac0d4c8-8405-4f41-aeb9-ff719bac403d">
+  <managers>
+    <manager username="MBSD.SDK" domain="MBSD-SDK-Shared"/>
+  </managers>
+  <authors/>
+  <access>public</access>
+</library>
